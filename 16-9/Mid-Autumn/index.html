@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>迎中秋</title>
+	<script type="text/javascript" src="js/libs/zepto.min.js"></script>
+    <script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/wx.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?01f674add0ffd7117d4f49cb121498d4";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+<body>
+	<div id="App">
+		<div class="header">
+			<img src="images/top.png" alt="">
+			<!-- <div class="banner"> -->
+				<img src="images/banner.png" alt="">
+			<!-- </div> -->
+			 <div class="title">
+			   <a href="#baby">
+			   		<img src="images/autumn_03.png" alt="">
+			   </a>
+				<a href="#momo">
+					<img src="images/autumn_04.png" alt="" style="float:right">
+				</a>
+			 </div> 
+			<a name="baby" id="baby"><img src="images/autumn_05.png" alt=""></a>
+		</div>
+		<div class="main">
+			<div class="products">
+			   <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;399&quot;}" id="baby_1" onclick="_hmt.push(['_trackEvent', 'baby_1', 'baby_1'])">
+			   <img src="images/baby_1.png" alt="">
+					<span>￥120</span>
+				</a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;396&quot;}" id="baby_2" onclick="_hmt.push(['_trackEvent', 'baby_2', 'baby_2'])">
+					<img src="images/baby_2.png" alt="">
+					<span>￥120</span>
+				</a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;200&quot;}" id="baby_3" onclick="_hmt.push(['_trackEvent', 'baby_3', 'baby_3'])">
+					<img src="images/baby_3.png" alt="">
+					<span>￥98</span>
+				</a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;371&quot;}" id="baby_4" onclick="_hmt.push(['_trackEvent', 'baby_4', 'baby_4'])">
+					<img src="images/baby_4.png" alt="">
+					<span>￥120</span>
+				</a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;351&quot;}" id="baby_5" onclick="_hmt.push(['_trackEvent', 'baby_5', 'baby_5'])">
+					<img src="images/baby_5.png" alt="">
+					<span>￥128</span>
+				</a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;410&quot;}" id="baby_6" onclick="_hmt.push(['_trackEvent', 'baby_6', 'baby_6'])">
+					<img src="images/baby_6.png" alt="">
+					<span>￥139</span>
+				</a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;407&quot;}" id="baby_7" onclick="_hmt.push(['_trackEvent', 'baby_7', 'baby_7'])">
+					<img src="images/baby_7.png" alt="">
+					<span>￥115</span>
+				</a>
+			</div>
+			<!-- 妈妈用品 -->
+			<div class="momo">
+			   <a name="momo" id="momo">
+			   	  <img src="images/momo.png" alt="">
+			   </a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;389&quot;}" id="momo_1" onclick="_hmt.push(['_trackEvent', 'momo_1', 'momo_1'])">
+					<img src="images/momo_1.png" alt="">
+					<span>￥75</span>
+				</a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;349&quot;}" id="momo_2" onclick="_hmt.push(['_trackEvent', 'momo_2', 'momo_2'])">
+					<img src="images/momo_2.png" alt="">
+					<span>￥162</span>
+				</a>
+			</div>
+			<div class="products">
+				<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;392&quot;}" id="momo_3" onclick="_hmt.push(['_trackEvent', 'momo_3', 'momo_3'])">
+					<img src="images/momo_3.png" alt="">
+					<span>￥149</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+    Zepto(function($) {
+         
+         if(Util.wechatBrowse()){
+
+                var UserID = 0;
+                var info = Util.locationObject()
+                if (info) {
+                    if (info['UserID']) {
+                        UserID = info['UserID'];
+                    }
+                }
+
+                $(".products a").each(function(index){
+                    
+                    var attr = $(this).attr("href");
+                    var data = JSON.parse(attr.split('//')[1]);
+                     console.log(attr);
+                    var url=''
+                    switch(parseInt(data.Type)){
+                        case  28:   //活动
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+ data.TypeName;
+                        break;
+                        case  11:   //产品详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=4_0_'+data.TypeName;
+                        break;
+                        case  14:   //医生列表
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+data.TypeName;
+                        break;
+                        case  13:   //解决方案详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=5_0_'+data.TypeName;
+                        break;
+                    }
+                    $(this).attr('href',url)
+
+                })
+            }
+    })
+</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>怡思丁</title>
+	<script type="text/javascript" src="js/libs/zepto.min.js"></script>
+	<script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="js/util.js?v1.3"></script>
+	<script type="text/javascript" src="js/wx.js?v1.9"></script>
+	<link rel="stylesheet" href="css/public.css">
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?ed1ce4a312fed2327084c9bd603cfa5e";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+</script>
+
+
+</head>
+<body>
+	<div id="App">
+		<div class="header">
+			<img src="images/header.jpg" alt="">
+		</div>
+		<div class="goods"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;427&quot;}" id="baby_1" onclick="_hmt.push(['_trackEvent', 'one', 'one'])"><img src="images/one.jpg" alt=""></a></div>
+		<div class="goods"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;428&quot;}" id="baby_1" onclick="_hmt.push(['_trackEvent', 'two', 'two'])"><img src="images/two.png" alt=""></a></div>
+		<div class="goods"><img src="images/middle.png" alt=""></div>
+		<div class="goods"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;430&quot;}" id="baby_1" onclick="_hmt.push(['_trackEvent', 'three', 'three'])"><img src="images/three.png" alt=""></a></div>
+		<div class="goods"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;431&quot;}" id="baby_1" onclick="_hmt.push(['_trackEvent', 'four', 'four'])"><img src="images/four.png" alt=""></a></div>
+	</div>
+</body>
+
+
+ <script type="text/javascript">
+
+ Zepto(function($) {
+     
+            if(Util.wechatBrowse()){
+
+                var UserID = 0;
+                var info = Util.locationObject()
+                if (info) {
+                    if (info['UserID']) {
+                        UserID = info['UserID'];
+                    }
+                }
+                
+                $("a").each(function(index){
+                	 
+                    var attr = $(this).attr("href");
+                    var data = JSON.parse(attr.split('//')[1]);
+                    // console.log(data,index)
+                    var url=''
+                    switch(parseInt(data.Type)){
+                        case  28:   //活动
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+ data.TypeName;
+                        break;
+                        case  11:   //产品详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=4_0_'+data.TypeName;
+                        break;
+                        case  14:   //医生列表
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+data.TypeName;
+                        break;
+                        case  13:   //解决方案详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=5_0_'+data.TypeName;
+                        break;
+                    }
+                    $(this).attr('href',url)
+
+
+                })
+            }
+
+    })
+
+
+</script>
+</html>

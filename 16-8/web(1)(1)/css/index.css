@@ -1,0 +1,69 @@
+.header{background:#fff;}
+.header_top {padding:1.2em 0;}
+.logo{float:left;}
+.menu{width:100%;background:#fe5a7c;padding:0.5em 0;}
+.menu li{display:inline-block;}
+.menu li:first-child{margin-left:0;}
+.menu li a{display: block;font-size: 1.7em;color: #fff;font-weight: 100;padding: 8px 15px 6px;
+}
+#nav .current a { color:#fff; font-weight:bold; 
+}
+
+.banner .s-hidden{display: none;}
+.banner .header-top{width: 100%; background:url('../images/header_bj.jpg') no-repeat 0 0 ; background-size: 100% 100%;}
+
+.top-center{width: 1000px; margin: 0 auto;}
+.top-center img{ max-width: 100%;display: block; margin: 0 auto; }
+
+.middle .middle_top{margin:65px 0;}
+.middle_bottom img{ display: block; margin: 0 auto; margin-top:20px;border-bottom: 1px solid #e6e6e6;padding-bottom: 36px}
+
+.footer{width: 100%;background: #fe83a1;color: white;}
+.footer .distance{padding: 26px 0}
+.footer .distance a{ color: #fff;}
+.footer p{text-align: center;font-size: 16px;line-height: 26px}
+.footer img{display: none;}
+.footer .email{display: none;}
+
+
+
+ /*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+ @media (min-width: 768px) and (max-width: 991px){
+	.banner img{width:70%;}
+	.banner .s-hidden{display: none;}
+	.banner .header-top{width: 100%; background:url('../images/header_bj.jpg') no-repeat 0 0 ; background-size: 100% 100%;}
+
+	.top-center{width: 100%; }
+	.top-center img{ max-width: 70%; }
+
+	.middle .middle_top{margin:1.386667rem 0;}
+	.middle img{width: 70%}
+	.middle_bottom img{margin-top:0.426667rem;border-bottom: 0.021333rem solid #e6e6e6;padding-bottom: 0.768rem}
+
+	.footer{width:100%;background: #fe83a1;color: white;}
+	.footer .distance{padding:0.554667rem 0;}
+	.footer p{text-align: center;font-size: 0.341333rem;line-height: 0.554667rem}
+	.footer img{display:none;}
+	.footer .email{display: none;}
+}
+         
+@media (max-width:767px){ 
+	.top-center{width: 92%; }
+	.header,.menu{display: none;}
+	.banner .click_download{position: relative;}
+	.banner .click_download a{width: 8rem;height: 2.1rem;border-radius: 0.49rem;position: absolute;top: 12.41rem;left: 3.97rem;}
+	.banner .sm-hidden{display: none;}
+	.banner .s-hidden{display: block}
+	.banner .click_download img{width: 100%}
+	.middle .middle_bottom img{border-bottom:none;}
+	.footer .distance{padding: 12px 0}
+	.footer p{font-size: 14px;line-height: 16px}
+	.footer img{display: block;}
+	.footer .email{display: block;padding-top: 30px;}
+}
+
+/*在小于480px的屏幕里，微小屏幕，更低分辨率的手机*/  
+@media (max-width: 480px){           
+	.footer p{font-size:8px}
+	.middle .middle_top{margin:50px 0;}
+}

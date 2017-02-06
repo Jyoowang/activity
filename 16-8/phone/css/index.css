@@ -1,0 +1,52 @@
+
+
+.top-center{width: 1000px; margin: 0 auto;}
+.top-center img{ max-width: 100%;display: block; margin: 0 auto; }
+
+.middle .middle_top{margin:65px 0;}
+.middle_bottom img{ display: block; margin: 0 auto;border-bottom: 1px solid #e6e6e6;}
+#links{width: 110px;height: 40px;display: block;position: absolute;top: 10px;
+    right: 20px;border-radius: 36px;}
+
+
+
+
+ /*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+ @media (min-width: 768px) and (max-width: 991px){
+	.banner img{width:70%;}
+	.banner .s-hidden{display: none;}
+	
+	.top-center{width: 100%; }
+	.top-center img{ max-width: 70%; }
+
+	.middle .middle_top{margin:1.386667rem 0;}
+	.middle img{width: 70%}
+	.middle_bottom img{margin-top:0.426667rem;border-bottom: 0.021333rem solid #e6e6e6;padding-bottom: 0.768rem}
+	#links{width: 134px;height: 48px;display: block; position: absolute;
+    top: 18px;right: 153px;border-radius: 36px;}
+
+	
+}
+         
+@media (max-width:767px){ 
+	.top-center{width: 100%; }
+	.header,.menu{display: none;}
+	.banner .click_download{position: relative;}
+	.banner .click_download a{width: 8rem;height: 2.1rem;border-radius: 0.49rem;position: absolute;top: 12.41rem;left: 3.97rem;}
+	.banner .sm-hidden{display: none;}
+	.banner .s-hidden{display: block}
+	.banner .click_download img{width: 100%}
+	.middle .middle_bottom img{border-bottom:none;}
+	
+}
+
+/*在小于480px的屏幕里，微小屏幕，更低分辨率的手机*/  
+@media (max-width: 480px){           
+	#links{width: 92px;height: 28px;display: block;position: absolute;
+    top: 16px;right: 27px;border-radius: 36px;}
+	.middle .middle_top{margin:50px 0;}
+}
+@media (max-width: 330px){
+	#links{width: 80px;height: 26px;display: block;position: absolute;
+    top: 12px;right: 22px; border-radius: 36px;}
+}

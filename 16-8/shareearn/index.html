@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		    <meta charset="UTF-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		    <meta content="yes" name="apple-mobile-web-app-capable" />
+		    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		    <meta content="telephone=no" name="format-detection" />
+		    <title>育儿24小时</title>
+		    <script type="text/javascript" src="js/libs/zepto.min.js"></script>
+		    <script type="text/javascript" src="js/libs/jquery1.42.min.js"></script> 
+		    <script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+		    <script type="text/javascript" src="js/util.js?v1.3"></script>
+		    <script type="text/javascript" src="js/wx.js?v1.9"></script>
+		    <link rel="stylesheet" type="text/css" href="css/public.css?v1.2">
+		    <link rel="stylesheet" type="text/css" href="css/style.css?v1.3">
+	</head>
+ 	<script type="text/javascript">
+ 		
+ 		$(function(){
+ 			$('.txtMarquee-left')
+
+ 			var ulWidth=0;
+ 			$('.txtMarquee-left ul li').each(function(){
+ 				ulWidth+=$(this).width();
+ 			})
+ 			console.log(ulWidth);
+ 			var ds=$('.txtMarquee-left ul').html()
+ 			console.log(ds)
+ 			$('.txtMarquee-left ul').html(ds+ds)
+			$('.txtMarquee-left ul').width(ulWidth*2);
+
+			var time,left=0,s=30,windowWidth=$(window).width();
+			time=setInterval(function(){
+				if(left==(ulWidth)){
+					left=0;
+				}
+				$('.txtMarquee-left ul').css('left', -left);
+				left++;
+			},s)
+
+
+ 		})
+ 	</script>
+<style>
+	.tempWrap{width:96%;margin:0 auto;}
+</style>
+	<body>
+		<div id="App">
+			<div class="main">
+				<div class="header_top">
+					<img src="images/banner.png">
+				</div>
+				<div class="txtMarquee-left">
+				   <ul>
+					     <li>口红分享赚了10元</li>
+					     <li>哎哟分享赚了25元</li>
+					     <li>周***分享了待产包</li>
+					     <li>伞菇么分享了修护霜</li>
+					     <li>虾鱼分享赚了10元</li>
+					     <li>Zorsh分享了托腹带</li>
+					     <li>小饭。分享了峰速仪</li> 
+                         <li>lin0分享了合生素</li>
+                         <li>馄饨分享赚了15元</li>
+                         <li>给力鱼分享了硅凝胶</li> 
+		             </ul>   
+                </div>
+                <!-- TOP榜 -->
+                <div class="share_top">
+                   <div class="title">
+                   	   <div class="title_box">
+                		   <span>分享TOP榜</span>
+                	    </div>
+                   </div>
+                   <div class="onlyone">
+                     <p>
+                     	点击产品详情页<i><img src="images/icon.png">&nbsp;&nbsp;&nbsp;赚￥</i> 或者<i><img src="images/icon.png"></i>分享好东西
+                           朋友购买即得现金奖励
+                     </p>                  	  
+                   </div>
+                	<div class="content">
+                		<div class="prolist"> 
+			                <ul class="clearfix">
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;237&quot;}" ><img src="images/youze.jpg" alt=""></a></div>
+			                            <p>优泽倍润宝宝湿疹修护霜</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥9.8</span>
+			                                <del>￥98</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;237&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;279&quot;}" ><img src="images/ningjiao.jpg" alt=""></a></div>
+			                            <p>舒痕硅凝胶</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥10.8</span>
+			                                <del>￥108</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;279&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                </ul>
+                        </div>
+
+                        <div class="prolist"> 
+			                <ul class="clearfix">
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;301&quot;}" ><img src="images/PEF-2.jpg" alt=""></a></div>
+			                            <p>科卡PEF-2儿童呼气峰值仪</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥7</span>
+			                                <del>￥70</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;301&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;313&quot;}" ><img src="images/care_1.jpg" alt=""></a></div>
+			                            <p>凯优儿童成人治疗吸入雾化器</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥99.9</span>
+			                                <del>￥999</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;313&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                </ul>
+                        </div>
+                	</div>
+                </div>	
+               <!-- 宝宝健康守卫者 -->
+                 <div class="share_top">
+                   <div class="title">
+                   	   <div class="title_box">
+                		   <span>宝宝健康守卫者</span>
+                	    </div>
+                   </div>
+                   
+                	<div class="content">
+                		<div class="prolist"> 
+			                <ul class="clearfix">
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;200&quot;}" ><img src="images/yike.jpg" alt=""></a></div>
+			                            <p>宜珂纯中药儿童穴位止咳咳嗽贴</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥9.8</span>
+			                                <del>￥98</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;200&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;237&quot;}" ><img src="images/youze.jpg" alt=""></a></div>
+			                            <p>优泽倍润宝宝湿疹修护霜</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥9.8</span>
+			                                <del>￥98</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;237&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                </ul>
+                        </div>
+
+                        <div class="prolist"> 
+			                <ul class="clearfix">
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;383&quot;}" ><img src="images/bulaijie.jpg" alt=""></a></div>
+			                            <p>布莱捷0-14岁儿童合生素</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥9.8</span>
+			                                <del>￥98</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;335&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;242&quot;}" ><img src="images/baiyinzi.jpg" alt=""></a></div>
+			                            <p>白因子广效性消毒抗菌喷雾</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥5.2</span>
+			                                <del>￥52</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;236&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                </ul>
+                        </div>
+                	</div>	
+                </div>
+                <!-- 待产妈妈必备 -->
+                <div class="share_top">
+                   <div class="title">
+                   	   <div class="title_box">
+                		   <span>待产妈妈必备</span>
+                	    </div>
+                   </div>
+                  
+                	<div class="content">
+                		<div class="prolist"> 
+			                <ul class="clearfix">
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;291&quot;}" ><img src="images/vc.jpg" alt=""></a></div>
+			                            <p>十月妈咪多种维生素矿物质片</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥11.8</span>
+			                                <del>￥118</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;291&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;289&quot;}" ><img src="images/AD.jpg" alt=""></a></div>
+			                            <p>十月妈咪维生素ad钙锌咀嚼片</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥6.8</span>
+			                                <del>￥68</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;289&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                </ul>
+                        </div>
+
+                        <div class="prolist"> 
+			                <ul class="clearfix">
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;7&quot;}" ><img src="images/3Mtuo.jpg" alt=""></a></div>
+			                            <p>耐适康3M Nexcare托腹带</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥49.9</span>
+			                                <del>￥499</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;7&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;18&quot;}" ><img src="images/3M-Nexcare.jpg" alt=""></a></div>
+			                            <p>耐适康3M Nexcare待产包</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥99</span>
+			                                <del>￥990</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;18&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                </ul>
+                        </div>
+                	</div>
+			    </div>
+			     <!-- 产后妈妈常用 -->
+                <div class="share_top">
+                   <div class="title">
+                   	   <div class="title_box">
+                		   <span>产后妈妈常用</span>
+                	    </div>
+                   </div>
+                  
+                	<div class="content">
+                		<div class="prolist"> 
+			                <ul class="clearfix">
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;5&quot;}" ><img src="images/futie.jpg" alt=""></a></div>
+			                            <p>耐适康3M Nexcare乳房冷热敷</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥15</span>
+			                                <del>￥150</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;5&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;19&quot;}" ><img src="images/chanhou.jpg" alt=""></a></div>
+			                            <p>耐适康3M Nexcare产后包</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥49</span>
+			                                <del>￥490</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;19&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                </ul>
+                        </div>
+
+                        <div class="prolist"> 
+			                <ul class="clearfix">
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;8&quot;}" ><img src="images/sufu.jpg" alt=""></a></div>
+			                            <p>耐适康3M Nexcare束腹带</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥35.9</span>
+			                                <del>￥359</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;8&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                    <li>
+			                        <div class="prolist-box">
+			                            <div class="pro-pic"><a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;279&quot;}" ><img src="images/ningjiao.jpg" alt=""></a></div>
+			                            <p>舒痕硅凝胶</p>
+			                            <p class="price-box">                              
+			                                <span>赚￥10.8</span>
+			                                <del>￥108</del>
+			                            </p>
+			                            <div class="button_share">
+			                            	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;279&quot;}"><span>立即分享</span></a>
+			                            </div>
+			                            
+			                        </div>
+			                    </li>
+			                </ul>
+                        </div>
+                	</div>
+			    </div>
+			    <!-- 分享小贴士 -->
+			    <div class="footer">
+			    	<div class="footer_tit">分享小贴士</div>
+			    	<p>1) 将您喜欢的产品分享给微信好友或朋友圈小伙伴</p>
+			    	<p>2)小伙伴通过您的分享链接购物，会直接优惠10%商品价格，同时您也会获得该件商品10%的返现。</p>
+                    <p>3) 交易成功且小伙伴确认收货7天后，进入我的钱包-收支明细查看。</p>
+			    </div>
+			    <div class="return_top" id="to_top">
+			    	<span><img src="images/arrow.png"><br />TOP</span>
+			    </div>
+		
+	</body>
+
+
+
+
+
+ <script type="text/javascript">
+
+
+window.onload=function(){ 
+
+
+// 返回顶部
+    var oBtn = document.getElementById('to_top');    
+    var timer = null;    
+    var bFlag = false; 
+        
+    oBtn.onclick=function(){    
+        moveScroll(0,500);     
+    }; 
+
+    function moveScroll(target,time){ 
+
+        var start = document.documentElement.scrollTop || document.body.scrollTop; 
+        var dis = target - start;    
+        var count = Math.floor(time/30);    
+        var n=0;    
+         
+        clearInterval(timer);    
+        timer = setInterval(function(){    
+            n++;    
+            bFlag=false;    
+            document.documentElement.scrollTop = start + dis*n/count;    
+            document.body.scrollTop = start+dis*n/count;    
+            if(n==count)    
+            {    
+                clearInterval(timer);    
+            }  
+    
+        },30);    
+    } 
+
+};    
+
+ Zepto(function($) {
+     
+            if(Util.wechatBrowse()){
+
+                var UserID = 0;
+                var info = Util.locationObject()
+                if (info) {
+                    if (info['UserID']) {
+                        UserID = info['UserID'];
+                    }
+                }
+                
+                $("a").each(function(index){
+                	 
+                    var attr = $(this).attr("href");
+                    var data = JSON.parse(attr.split('//')[1]);
+                    // console.log(data,index)
+                    var url=''
+                    switch(parseInt(data.Type)){
+                        case  28:   //活动
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+ data.TypeName;
+                        break;
+                        case  11:   //产品详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=4_0_'+data.TypeName;
+                        break;
+                        case  14:   //医生列表
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+data.TypeName;
+                        break;
+                        case  13:   //解决方案详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=5_0_'+data.TypeName;
+                        break;
+                    }
+                    $(this).attr('href',url)
+
+
+                })
+            }
+
+    })
+
+
+</script>
+
+</html>

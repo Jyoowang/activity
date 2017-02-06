@@ -1,0 +1,73 @@
+		
+
+.content{ width: 100%; background: url('../images/bj.png') repeat-y 0 0; background-size: 100%;}
+
+.userlist{ height: 30px; line-height: 30px; width: 100%; overflow: hidden; background-color: #ce9b3f; font-size: 14px; color: #fdefbd;}
+.userlist p{ width: 1000%; display: inline-block;position: relative;}
+.userlist p span{ margin-right: 10px;}
+
+
+.title-currency{ position: relative; width: 250px; height: 78px; line-height: 47px; background: url('../images/tiitle-img.png') no-repeat 0 0; background-size: 100% ; text-align: center; color: #fff; font-size: 13px; margin: 0 auto; margin-top: 40px; z-index: 4; }
+.title-currency p{}
+
+.turntable-box{ width: 306px; height: 305px; margin: 0 auto; position: relative; box-sizing: border-box; padding: 15px; background: url('../images/turntable.png') no-repeat 0 0 ; background-size: 100% 100%; margin-top: -42px; z-index: 3;}
+
+.turntable-box >img{ width: 100%;position: absolute; top:0; left: 0%; z-index: 1;}
+
+.turntable-box >p{ position: absolute; bottom: -10px; right: 0; font-size: 15px; color: #ce9b3f;}
+
+.pro-img{width: 100%;position: absolute; top:0; left: 0%; z-index: 4;}
+.pro-img img{max-width: 100%;}
+
+.pro-img .option-block{ position: absolute; width: 80px; text-align: center;}
+.pro-img .option-block img{ width: 70%;}
+.pro-img .option-block p{ text-align: center; font-size: 12px; color: #a06e15; margin-top: 5px;}
+.pro-img .option-01{left: 113px;top:33px;}
+.pro-img .option-02{ left: 175px;top: 53px;}
+.pro-img .option-03{ left: 209px;top: 132px;}
+.pro-img .option-04{ left: 187px;top: 195px;}
+.pro-img .option-05{left: 116px;top: 218px;}
+.pro-img .option-06{left: 44px;top: 190px;}
+.pro-img .option-07{left: 17px;top: 124px;}
+.pro-img .option-08{ left: 45px; top: 66px;}
+
+
+.ring{z-index: 3}
+.go-btn{width: 75px; height: 75px; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-o-transform: translate(-50% -50%);-moz-transform: translate(-50%, -50%); z-index: 5;background: url('../images/go-btn.png') no-repeat center center;  background-size: 100% 100%;}
+.go-btn img{ max-width: 100%}
+
+.current-pointer{ margin: 0 auto; z-index: 2; position: relative; width: 106px; height: 137px; background: url('../images/pointer.png') no-repeat center top;  background-size: 100% 100%;
+}
+
+.rule-box{ margin: 20px 20px 0 20px;padding-top: 8px;  background: url('../images/rule-icon.png') repeat-x left top; background-size: 18px; }
+.rule-box .rule-content{ background-color: #fdf095;padding-top: 10px;}
+.rule-box .rule-content .tit{ height: 30px; line-height: 30px; width: 100px; text-align: center; font-size: 16px; color: #fff; background-color: #ce9b3f; font-weight: bold;position: relative; left: -7px;}
+.rule-box .rule-content .tit:after{display:block; height:0; width: 0; line-height:0; content:'\20';  border-top:5px solid #a87926; border-left: 7px solid transparent; position: absolute; left: 0; bottom: -5px; }
+.rule-box .rule-content .rule-text{padding: 15px; font-size: 16px; color: #a06e15;}
+
+
+.result-box{ position: fixed; left: 0; top:0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); z-index: 9;display: none;}
+
+
+.result-box .success-result,.result-box .failure-result{ position: absolute; width: 320px;  left: 50%;margin-left: -160px; background: url('../images/winning.png') no-repeat center top; background-size: 100%;padding-top:90px; top:20%; display: none;}
+
+
+.result-box .success-result >p,.result-box .failure-result>p{ height: 34px; line-height: 34px; font-size:15px; color: #fff; text-align: center; font-weight: bold; }
+
+.result-box .result-text{ width: 180px; margin: 0 auto; text-align: center; margin-top: 10px; height: 100px;}
+.result-box .result-text span{ display: block; font-size: 18px; color: #fff; font-weight: bold;}
+.result-box .result-text small{ display: block;font-size: 12px; color: #fff;}
+.result-box .result-text em{ display: block;font-style: normal;font-size: 14px; color: #c5960c; }
+
+
+.result-box .failure-result{background: url('../images/failure.png') no-repeat center top;background-size: 100%; padding-top:42px;top:35%;}
+
+
+.result-box .failure-result .result-text span{ color: #c0bebe;font-size: 16px;}
+
+
+.result-box .failure-result .result-text p.btn{ height: 30px; margin: 0 auto; border-radius: 3px; font-size: 14px;margin-top: 22px;cursor: pointer; line-height: 30px; width: 150px; background-color: #ff5e85; color: #fff; text-align: center;}
+
+
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>十一国庆</title>
+	<script type="text/javascript" src="js/libs/zepto.min.js"></script>
+    <script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/wx.js"></script>
+    <link rel="stylesheet" href="css/public.css">   
+</head>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?74c522d37d7ae8c2102389954a4e4a04";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<style>
+	#App article{padding: 0 6px}
+	.product{margin-bottom: 6px;display:block;}
+</style>
+<body>
+	<div id="App">
+		<head>
+			<div class="jzimg"><img src="images/bannertop.png" alt=""></div>
+		</head>
+        <article>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;443&quot;}" id="product_1" onclick="_hmt.push(['_trackEvent', 'product_1', 'product_1'])" class="product">
+           		<div class="jzimg"><img src="images/product_1.png" alt=""></div>
+           		
+           </a>
+        	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;388&quot;}" id="product_2" onclick="_hmt.push(['_trackEvent', 'product_2', 'product_2'])" class="product">
+           		<div class="jzimg"><img src="images/product_2.png" alt=""></div>
+           		
+           </a>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;243&quot;}" id="product_3" onclick="_hmt.push(['_trackEvent', 'product_3', 'product_3'])" class="product">
+           		<div class="jzimg"><img src="images/product_3.png" alt=""></div>
+           		
+           </a>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;279&quot;}" id="product_4" onclick="_hmt.push(['_trackEvent', 'product_4', 'product_4'])" class="product">
+           		<div class="jzimg"><img src="images/product_4.png" alt=""></div>
+           		
+           </a>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;436&quot;}" id="product_5" onclick="_hmt.push(['_trackEvent', 'product_5', 'product_5'])" class="product">
+           		<div class="jzimg"><img src="images/product_5.png" alt=""></div>
+           		
+           </a>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;425&quot;}" id="product_6" onclick="_hmt.push(['_trackEvent', 'product_6', 'product_6'])" class="product">
+              <div class="jzimg"><img src="images/product_6.png" alt=""></div>
+              
+           </a>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;220&quot;}" id="product_7" onclick="_hmt.push(['_trackEvent', 'product_7', 'product_7'])" class="product">
+              <div class="jzimg"><img src="images/product_7.png" alt=""></div>
+              
+           </a>
+           
+        	
+        </article>
+
+	</div>
+</body>
+<script>
+    Zepto(function($) {
+         
+         if(Util.wechatBrowse()){
+
+                var UserID = 0;
+                var info = Util.locationObject()
+                if (info) {
+                    if (info['UserID']) {
+                        UserID = info['UserID'];
+                    }
+                }
+
+                $("a").each(function(index){
+                    
+                    var attr = $(this).attr("href");
+                    var data = JSON.parse(attr.split('//')[1]);
+                     console.log(attr);
+                    var url=''
+                    switch(parseInt(data.Type)){
+                        case  28:   //活动
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+ data.TypeName;
+                        break;
+                        case  11:   //产品详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=4_0_'+data.TypeName;
+                        break;
+                        case  14:   //医生列表
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+data.TypeName;
+                        break;
+                        case  13:   //解决方案详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=5_0_'+data.TypeName;
+                        break;
+                    }
+                    $(this).attr('href',url)
+
+                })
+            }
+    })
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body{
+    background:#666;
+    background-attachment: fixed;
+    -webkit-transition: background 0.5s ease-out;
+    -moz-transition: background 0.5s ease-out;
+    -o-transition: background 0.5s ease-out;
+}
+.block{
+    width:30%;
+    /*position:absolute;*/
+    margin:10% auto;
+    position:fixed;
+    font-family:Verdana, Geneva, sans-serif;
+    text-align:center;
+}
+.block2{
+    width:70%;
+    /*position:relative;*/
+    margin-left:auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:50px;
+}
+#title{
+    color:#fff;
+}
+h2{
+    color:#fff;
+}
+p{
+    color:#FF9;
+}
+.block2>p{
+    margin-top:200px;
+}
+</style>
+<script type="application/javascript">
+window.onload=function(){
+    var changeBG=true,Top=0;
+    var title=document.getElementById("title");
+    var phrase=document.getElementById("phrase");
+    var changed_color="#222";
+    var lastTop=0;
+    //设置原始变量
+    setInterval(function(){
+        Top=document.body.scrollTop;
+        if(Top>400+lastTop||Top<lastTop-400){
+            if(changed_color=="#222"){
+                document.body.style.backgroundColor=changed_color;
+                title.innerHTML="World";
+                phrase.innerHTML="hey, I changed!";
+                changed_color="#666";
+            }else{
+                document.body.style.backgroundColor=changed_color;
+                title.innerHTML="Hello";
+                phrase.innerHTML="welcome to my homepage!";
+                changed_color="#222";
+            }
+            lastTop=Top;
+        }
+    },1000)
+}
+</script>
+</head>
+
+<body>
+<div class="block">
+<h1 id="title">Hello</h1>
+<p id="phrase">welcome to my homepage!</p>
+</div>
+<div class="block2">
+<div id="a">
+<h2>1. Keep good friends around</h2>
+<p>Keeping good company will keep you socially happy and healthy throughout your life. On the other hand, nothing will drag you down more than socializing with people who hold you back from your full potential. Ironically, surrounding yourself with people who are intent on moving forward in life will keep you energized and make you feel as if you’re always in your prime. It’s when you find yourself surrounded by toxic friends who live in the past that you realize you’re not getting any younger, and you’ll start to feel as if the best days of your life have passed you by.
+</p>
+</div>
+<div id="b">
+<h2>2. Continue learning</h2>
+<p>Saying someone is “old-fashioned” is just a nice way of saying their behind the times. If you get into the mindset that you’re “too old” to learn something (like how to use Windows 10 or an iPhone), you’ll certainly feel that you’re past your prime. We live in a world in which education and knowledge is literally at our fingertips, and it’s never been easier to pick up a new skill or hobby. Make it a habit to learn something new every day, and you’ll continue feeling sharp and ready to take on the world. Soon enough, you’ll be showing your children tips and tricks on the iPhone 6!
+ </p>
+</div>
+<div id="c">
+<h2>3. Enjoy the little things</h2>
+<p>When we were kids, we jumped in puddles, rolled down hills, and ate snowflakes falling from the sky. I’m not saying you, as a grown adult, should do these things habitually (except eating snowflakes; you’re never too old for that). But you should never overlook the small things in life. Celebrate your good hair days. Feel victorious when you hit every green light on the way home from work. Actively look for things to enjoy in your life; no matter how much may be going wrong, there will always be something to smile about if you look hard enough.
+ </p>
+</div>
+</div>
+</body>
+</html>

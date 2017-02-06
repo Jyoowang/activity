@@ -1,0 +1,56 @@
+body{background: #f2f2f2;}
+#App{width: 100%;height: auto; width: 100%; max-width: 640px;margin: 0 auto; overflow: auto; position: relative;}
+.change_color{background:rgba(255, 28, 74, 0)!important;}
+.fixed_top{height: 2.0259rem;background:rgba(255, 255, 255, 0);}
+.fixed_top input{width: 14.44444rem;height: 1.66667rem;background: white url("../images/search.png")no-repeat 0.513333rem 0.555333rem;background-size: 0.7963rem 0.7963rem;opacity: 0.5;border-radius: 0.33333rem;font-size: 0.88889rem;color: #999999;position:relative;padding-left: 1.64rem;top: 4px;}
+.fixed_top .baby img{width:30px;height: 30px;}
+.fixed_top .baby{margin: 0 0.51852rem;position:relative;top:4px;}
+.question{width: 2.77778rem;height:2.59259rem;text-align: center;line-height:1.5rem;position:relative;top: 4px; }
+.question img{width: 21px;height: 17px;}
+/*轮播开始*/
+.focus{ width:100%; height:11.48148rem; margin:0 auto; position:relative; overflow:hidden;border-bottom: 0.01852rem solid #e7e7e7;}
+.focus .hd{ width:100%; height:0.2037rem;  position:absolute; z-index:1; bottom:0.98519rem; text-align:center;  }
+.focus .hd ul{ display:inline-block; height:11px; padding:3px 5px; background-color:rgba(255,255,255,0.7); 
+		-webkit-border-radius:7px; -moz-border-radius:7px; border-radius:7px; font-size:0; vertical-align:top;
+	}
+.focus .hd ul li{width:7px; height:7px; -webkit-border-radius:7px; -moz-border-radius:7px; border-radius:7px; background:#8C8C8C; margin:0 7px;  vertical-align:top; overflow:hidden;display: inline-block;}
+.focus .hd ul .on{ background:#FE6C9C;  }
+.focus .bd{ position:relative; z-index:0;}
+.focus .bd li img{ width:100%; height:11.48148rem}
+.focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */  }
+
+/*列表图*/
+.pic{width: 100%;/*min-height: 9.25926rem;*/text-align:center;background: white;}
+.pic img{width:42px;}
+.pic .row{margin-bottom:0.333rem;}
+.pic .row p{padding-top:6px;}
+/*微课堂*/
+.title{padding-left:32px;padding-right:16px;height: 2.0741rem;line-height: 2.0741rem;background:white url(../images/tv.png)no-repeat 0.55926rem 0.56667rem;background-size:0.98148rem 0.88185rem;}
+.title span{color: #fe5a7c;font-size: 12px;}
+.micrclass{background: white;min-height:5.25556rem;position: relative;}
+.micrclass .col{background: #fde7e6; border-radius: 12px;color: #fe5a7c;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;margin-left: 10px;}
+.micrclass .col:first-child{margin-left: 0}
+/*医生*/
+.doctor{width: 100%;height:8.18519rem;position:relative;}
+.doctor p{background: #7ecb3a;font-size: 12px;white-space: nowrap;color: white;width: 3.14815rem;
+    height: 1.3963rem; border-radius: 4px;position: absolute;bottom: 10px;left: 10px; font-size: 12px;padding: 1px 2px;border: none;}
+.doctor img{width: 100%;}
+
+/**/
+.list_1{}
+.list_1 p{font-weight: bold;}
+.list_1 p span{color: #999;font-weight: normal;}
+.list_1 .set{font-size:16px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.list .item .img_jz {position: absolute;top: 10px;left: 10px; max-width: 88px; max-height: 84px;}
+.img_jz img{width: 100%;height: 100%;}
+.list .item-thumbnail-left { padding-top: 14px;min-height: 90px;}
+
+.list_1 button{color: white;width: 3.14815rem;height: 1.3963rem;border-radius: 4px;position: absolute;bottom: 20px;right:10px;background: #fcbd1a;font-size: 12px;padding:1px 2px;border:none;}
+.list_1 i{width: 12px;height: 12px;display: inline-block;}
+.list_1 .bj_icon{background: url(../images/calendar.png)no-repeat 0 1px;background-size: 100%}
+.list_1 .time{background: url(../images/time.png)no-repeat;background-size: 100%}
+.list_1 .people_icon{background: url(../images/people.png)no-repeat 0 2px;background-size: 100%}
+.list_1 .study{margin-right: 10px;}
+.top_none{border-top: none;}
+.bot_none{border-bottom: none;}
+.tit{padding-left:16px;font-size:16px;height: 1.741rem;line-height: 2.4rem;color: #fe5a7c;background: white;}

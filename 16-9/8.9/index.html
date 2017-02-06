@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>8.9首页</title>
+	<link rel="stylesheet" type="text/css" href="css/ionic/1.3.1/css/ionic.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/public.css">
+	<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="js/rem.js"></script>
+  <script type="text/javascript">
+  	  // window.onload = function(){
+
+  	  // 	document.onscroll = function(){
+
+  	  // 		var star = document.documentElement.scrollTop||document.body.scrollTop;
+  	  // 		var fixed_top = document.getElementById('fixed_top');
+  	  // 		if (star>100) {
+  	  // 			fixed_top.style.backgroundColor = 'red';
+  	  			
+  	  // 		}
+  	  // 	}
+
+  	  // }
+        window.onscroll=function(){
+        	
+        var top=document.documentElement.scrollTop||document.body.scrollTop;
+        var node=document.getElementById('fixed_top');
+        var changed_color="#fe5a7c";
+	        if(top>200){
+	            node.style.backgroundColor = changed_color;
+	        }else{
+	            node.style.display='none';
+	        }
+    }
+  </script>
+</head>
+<body>
+	<div id="app">
+		
+		<!-- 顶部固定 -->
+			<div class="bar bar-header fixed_top" id="fixed_top">
+			        <div class="baby">
+			        	<img src="images/baby.png" alt="">
+			        </div>        
+					 <input type="text" placeholder="宝宝长不高怎么办？"> 
+				     <div class="question"> 
+				       	  <img src="images/question.png">
+				      </div> 
+			</div>
+			
+			<!-- 轮播 -->
+			<div class="main overflow-scroll">
+				<div id="focus" class="focus">
+					<div class="hd">
+						<ul></ul>
+					</div>
+					<div class="bd">
+						<ul>
+								<li><a href="#"><img src="images/banner_1.png" /></a></li>
+								<li><a href="#"><img src="images/banner_1.png"/></a></li>
+								<li><a href="#"><img src="images/banner_1.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<script type="text/javascript">
+					TouchSlide({ 
+						slideCell:"#focus",
+						titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+						mainCell:".bd ul", 
+						effect:"leftLoop", 
+						autoPlay:true,//自动播放
+						autoPage:true //自动分页
+					});
+				</script>
+			<!-- 列表图 -->
+			<div class="pic">
+				<div class="row">
+					<div class="col"><a href="#"><img src="images/pic_1.png" alt=""><p>育儿头条</p></a></div>
+					<div class="col"><a href="#"><img src="images/pic_2.png" alt=""><p>健康评测</p></a></div>
+					<div class="col"><a href="#"><img src="images/pic_3.png" alt=""><p>疫苗提醒</p></a></div>
+					<div class="col"><a href="#"><img src="images/pic_4.png" alt=""><p>育儿任务</p></a> </div>
+		        </div>
+		        <div class="row">
+					<div class="col"><a href="#"><img src="images/pic_5.png" alt=""><p>育儿头条</p></a></div>
+					<div class="col"><a href="#"><img src="images/pic_6.png" alt=""><p>健康评测</p></a></div>
+					<div class="col"><a href="#"><img src="images/pic_7.png" alt=""><p>疫苗提醒</p></a></div>
+					<div class="col"><a href="#"><img src="images/pic_8.png" alt=""><p>育儿任务</p></a> </div>
+		        </div>
+			</div>
+			<!-- micrclass -->
+			<div class="micrclass line_bot">
+				<div class="title">妈妈微课堂<span class="fr">更多 &gt;</span></div>
+				<div class="row">
+					<div class="col">常见病</div>
+					<div class="col">常见病</div>
+					<div class="col">常见病</div>
+					<div class="col">常见病</div>
+				</div>
+			</div>
+			<!-- doctor -->
+				<div class="doctor">
+					<a href=""><img src="images/doctor.png" alt="">
+						<p>正在直播</p>
+					</a>
+				</div>
+			<!-- list -->
+				<div class="list_1">
+					<ul class="list">
+						<li class="item item-thumbnail-left">
+						    <div class="img_jz">
+						    	<img src="images/appointment_1.png" alt="">
+						    </div>
+							
+							<p class="set">补水季，喝什么水最健康？</p>
+							<p>盛晓阳  主任医师</p>
+							<p class="">
+					           <i class="time"></i>
+					             <span>06/19  20:00-21:00 </span>
+				            </p>
+					           <button>预约听课</button>
+						</li>
+						<li class="item item-thumbnail-left">
+						   <div class="img_jz">
+							<img src="images/appointment_1.png" alt="">
+							</div>
+							<p class="set">补水季，喝什么水最健康？</p>
+							<p>盛晓阳  主任医师</p>
+							<p class="">
+					           <i class="time"></i>
+					             <span>06/19  20:00-21:00 </span>
+				            </p>
+				            <button>预约听课</button>
+						</li>
+						<div class="tit">往期回顾</div>
+						<li class="item item-thumbnail-left top_none">
+							<div class="img_jz">
+							<img src="images/appointment_1.png" alt="">
+							</div>
+							<p class="set">说说新生儿黄疸那些事儿</p>
+							<p>陈梅  副主任医师</p>
+							<p class="">
+					           <i class="bj_icon"></i>
+					             <span class="study">儿童保健</span>
+					              <i class="people_icon"></i>
+					             <span>2016人学习</span>
+				            </p>
+						</li>
+						<li class="item item-thumbnail-left">
+							<div class="img_jz">
+							 <img src="images/appointment_1.png" alt="">
+							 </div>
+							<p class="set">说说新生儿黄疸那些事儿</p>
+							<p>陈梅  副主任医师</p>
+							<p class="">
+					           <i class="bj_icon"></i>
+					             <span class="study">儿童保健</span>
+					              <i class="people_icon"></i>
+					             <span>2016人学习</span>
+				            </p>
+						</li>
+						<li class="item item-thumbnail-left">
+							<div class="img_jz">
+							<img src="images/appointment_1.png" alt="">
+							</div>
+							<p class="set">说说新生儿黄疸那些事儿</p>
+							<p>陈梅  副主任医师</p>
+							<p class="">
+					           <i class="bj_icon"></i>
+					             <span class="study">儿童保健</span>
+					              <i class="people_icon"></i>
+					             <span>2016人学习</span>
+				            </p>
+						</li>
+						<li class="item item-thumbnail-left bot_none">
+							<div class="img_jz">
+							   <img src="images/appointment_1.png" alt="">
+							</div>
+							<p class="set">说说新生儿黄疸那些事儿</p>
+							<p>陈梅  副主任医师</p>
+							<p class="">
+					           <i class="bj_icon"></i>
+					             <span class="study">儿童保健</span>
+					              <i class="people_icon"></i>
+					             <span>2016人学习</span>
+				            </p>
+						</li>
+						<div class="title mt10">育儿头条<span class="fr">更多 &gt;</span></div>
+						<li class="item item-thumbnail-left clear">
+						   <div class="img_jz">
+							<img src="images/appointment_1.png" alt="">
+							</div>
+							<p class="set">补水季，喝什么水最健康？</p>							 
+						</li>
+						<li class="item item-thumbnail-left">
+						<div class="img_jz">
+							<img src="images/appointment_1.png" alt="">
+							</div>
+							<p class="set">补水季，喝什么水最健康？</p>							 
+						</li>
+						<li class="item item-thumbnail-left">
+						<div class="img_jz">
+							<img src="images/appointment_1.png" alt="">
+							</div>
+							<p class="set">补水季，喝什么水最健康？</p>							 
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- footer -->
+			<div class="tabs tabs-stable tabs-icon-top">
+				<a class="tab-item active">
+					<i class="icon ion-ios-paper-outline"></i>育儿知识
+				</a>
+				<a class="tab-item">
+					<i class="icon ion-ios-book-outline"></i>育儿诊所
+				</a>
+				<a class="tab-item">
+					<i class="icon ion-images"></i>宝妈聚会
+				</a>
+				<a class="tab-item">
+					<i class="icon ion-ios-videocam-outline"></i>个人中心
+				</a>
+	        </div> 
+		
+		
+	</div>
+	<script>
+	// $(function() {
+
+	// 		$(window).scroll(function(){
+				
+	// 			if ($(window).scrollTop()>=100) {
+	// 				$('#fixed_top').removeClass('fixed_top').addClass('change_color');
+	// 			}else{
+	// 				$('#fixed_top').removeClass('change_color');
+	// 			}
+	// 		});
+ //         });
+   //          $(function() {
+            	
+			//     var elm = $('#fixed_top');
+
+			//     var startPos = 100;
+
+			//     $.event.add(window, "scroll", function() {
+			    	
+			//         var p = $(window).scrollTop();
+
+			//         $(elm).css('background',((p) > startPos) ? 'red' : 'green');
+			//         $(elm).css('opacity',((p) > startPos) ? '0.8' : '');
+			//     });
+			// });
+			 // $(function(){
+			 //    $.event.add(window, "scroll", function() {
+			 //        $(this).addClass("curr").siblings().removeClass("curr");
+		  //   });
+		  // });
+	</script>
+</body>
+</html>

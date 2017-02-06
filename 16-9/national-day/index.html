@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>十一国庆</title>
+	<script type="text/javascript" src="js/libs/zepto.min.js"></script>
+    <script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/wx.js"></script>
+    <link rel="stylesheet" href="css/public.css">   
+</head>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e4e1841b4e1d98e197bb1c90d2ad150c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<style>
+	#App article{padding: 0 6px}
+	.commodity{margin-bottom: 6px;display:block;}
+</style>
+<body>
+	<div id="App">
+		<head>
+			<div class="jzimg"><img src="images/topbanner.png" alt=""></div>
+		</head>
+        <article>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;434&quot;}" id="commodity_1" onclick="_hmt.push(['_trackEvent', 'commodity_1', 'commodity_1'])" class="commodity">
+           		<div class="jzimg"><img src="images/commodity_1.png" alt=""></div>
+           		
+           </a>
+        	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;436&quot;}" id="commodity_2" onclick="_hmt.push(['_trackEvent', 'commodity_2', 'commodity_2'])" class="commodity">
+           		<div class="jzimg"><img src="images/commodity_2.png" alt=""></div>
+           		
+           </a>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;243&quot;}" id="commodity_3" onclick="_hmt.push(['_trackEvent', 'commodity_3', 'commodity_3'])" class="commodity">
+           		<div class="jzimg"><img src="images/commodity_3.png" alt=""></div>
+           		
+           </a>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;373&quot;}" id="commodity_4" onclick="_hmt.push(['_trackEvent', 'commodity_4', 'commodity_4'])" class="commodity">
+           		<div class="jzimg"><img src="images/commodity_4.png" alt=""></div>
+           		
+           </a>
+           <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;433&quot;}" id="commodity_5" onclick="_hmt.push(['_trackEvent', 'commodity_5', 'commodity_5'])" class="commodity">
+           		<div class="jzimg"><img src="images/commodity_5.png" alt=""></div>
+           		
+           </a>
+           
+        	
+        </article>
+
+	</div>
+</body>
+<script>
+    Zepto(function($) {
+         
+         if(Util.wechatBrowse()){
+
+                var UserID = 0;
+                var info = Util.locationObject()
+                if (info) {
+                    if (info['UserID']) {
+                        UserID = info['UserID'];
+                    }
+                }
+
+                $("a").each(function(index){
+                    
+                    var attr = $(this).attr("href");
+                    var data = JSON.parse(attr.split('//')[1]);
+                     console.log(attr);
+                    var url=''
+                    switch(parseInt(data.Type)){
+                        case  28:   //活动
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+ data.TypeName;
+                        break;
+                        case  11:   //产品详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=4_0_'+data.TypeName;
+                        break;
+                        case  14:   //医生列表
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+data.TypeName;
+                        break;
+                        case  13:   //解决方案详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=5_0_'+data.TypeName;
+                        break;
+                    }
+                    $(this).attr('href',url)
+
+                })
+            }
+    })
+</script>
+</html>

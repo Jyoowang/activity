@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+	<title>开学季</title>
+	<script type="text/javascript" src="js/libs/zepto.min.js"></script>
+    <script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/wx.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/public.css?v1.2">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v1.3">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?8d6d13bfc52d8f783f5f892c573a5755";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+</script>
+</head>
+
+
+<body>
+	<div id="App">
+	 <div class="main">
+	 	<div class="banner">
+			<img src="images/banner.png"> 
+		</div>
+		<div class="timer">
+			<!-- <p>距离活动结束还有</p>
+			<div class="time">
+                    <span class="hour">
+                        <em>0</em><em>0</em>
+                    </span> :
+                    <span class="minute">
+                        <em>0</em><em>0</em>
+                    </span> :
+                    <span class="second">
+                        <em>0</em><em>0</em>
+                    </span>
+                </div> -->
+		</div>
+		<div class="activity">
+			<a href="#"><img src="images/activity_1.png" class="mr10"></a>
+			<a href="#"><img src="images/activity_2_08.png"></a>
+		</div>
+		<div class="title">
+			<img src="images/need_tit.png">
+		</div>
+		<div class="need">
+			<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;391&quot;}" id="need_1" onclick="_hmt.push(['_trackEvent', 'need_1', 'need_1'])"><img src="images/need_1.png?v-ss" class="mb6"></a>
+			<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;360&quot;}" id="need_2" onclick="_hmt.push(['_trackEvent', 'need_2', 'need_2'])"><img src="images/need_2.png?v-ss" class="mb6"></a>
+			<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;354&quot;}" id="need_3" onclick="_hmt.push(['_trackEvent', 'need_3', 'need_3'])"><img src="images/need_3.png?v-ss"></a>
+		</div>
+		<div class="title mb10">
+			<img src="images/baby.png">
+		</div>
+		<div class="goods">
+			<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;242&quot;}" id="goods_1" onclick="_hmt.push(['_trackEvent', 'goods_1', 'goods_1'])"><img src="images/goods_1.png?v-ss" class="mr7 mb10"></a>
+			<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;395&quot;}" id="goods_2" onclick="_hmt.push(['_trackEvent', 'goods_2', 'goods_2'])"><img src="images/goods_2.png?v-ss" class="mb10"></a>
+			<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;359&quot;}" id="goods_3" onclick="_hmt.push(['_trackEvent', 'goods_3', 'goods_3'])"><img src="images/goods_3.png?v-ss" class="mr7"></a>
+			<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;358&quot;}" id="goods_4" onclick="_hmt.push(['_trackEvent', 'goods_4', 'goods_4'])"><img src="images/goods_4.png?v-ss"></a>
+		</div>
+	 </div>
+		
+	</div>
+
+</body>
+<script>
+    Zepto(function($) {
+        
+
+        // var currentDate= new Date().getTime();     
+        // var startDate= new Date('2016/09/07').getTime();
+
+        // if(startDate>currentDate){
+        //     countdown()
+        //     setInterval(countdown,1000)
+        // }
+        
+
+
+
+        if(Util.wechatBrowse()){
+
+                var UserID = 0;
+                var info = Util.locationObject()
+                if (info) {
+                    if (info['UserID']) {
+                        UserID = info['UserID'];
+                    }
+                }
+
+                $(".need a,.goods a").each(function(index){
+                    
+                    var attr = $(this).attr("href");
+                    var data = JSON.parse(attr.split('//')[1]);
+                    console.log(attr);
+                    var url=''
+                    switch(parseInt(data.Type)){
+                        case  28:   //活动
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+ data.TypeName;
+                        break;
+                        case  11:   //产品详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=4_0_'+data.TypeName;
+                        break;
+                        case  14:   //医生列表
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+data.TypeName;
+                        break;
+                        case  13:   //解决方案详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=5_0_'+data.TypeName;
+                        break;
+                    }
+                    $(this).attr('href',url)
+
+
+                })
+        }
+           
+
+    })
+
+    // function countdown(){
+    //     var time=computeTime()
+    //     if(time.hours>9){//判断是否为两位数
+    //         $('.time .hour em').eq(0).html(parseInt(time.hours/10))
+    //         $('.time .hour em').eq(1).html(time.hours%10)
+    //     }else{
+    //         $('.time .hour em').eq(1).html(time.hours)
+    //     }
+
+    //     if(time.minutes>9){
+    //         $('.time .minute em').eq(0).html(parseInt(time.minutes/10))
+    //         $('.time .minute em').eq(1).html(time.minutes%10)
+    //     }else{
+    //         $('.time .minute em').eq(1).html(time.minutes)
+    //     }
+    //     if(time.seconds>9){
+    //         $('.time .second em').eq(0).html(parseInt(time.seconds/10))
+    //         $('.time .second em').eq(1).html(time.seconds%10)
+    //     }else{
+    //         $('.time .second em').eq(1).html(time.seconds)
+    //     }
+
+    // }
+
+    // function computeTime(){
+
+    //     var currentDate= new Date().getTime();
+    //     var startDate= new Date('2016/09/07').getTime();
+    //     var surplus=startDate-currentDate;
+    //     //计算出相差天数
+    //     var days=Math.floor(surplus/(24*3600*1000))
+         
+    //     //计算出小时数
+    //     var leave1=surplus%(24*3600*1000)    //计算天数后剩余的毫秒数
+    //     var hours=Math.floor(leave1/(3600*1000))
+    //     //计算相差分钟数
+    //     var leave2=leave1%(3600*1000)        //计算小时数后剩余的毫秒数
+    //     var minutes=Math.floor(leave2/(60*1000))
+    //     //计算相差秒数
+    //     var leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数
+    //     var seconds=Math.round(leave3/1000)
+
+    //     // console.log(hours,minutes,seconds)
+
+    //     return {
+    //         days:days,
+    //         hours:hours,
+    //         minutes:minutes,
+    //         seconds:seconds
+    //     }
+    // }
+
+</script> 
+</html>

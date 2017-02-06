@@ -1,0 +1,68 @@
+a{display: block;}
+.header_img{width: 100%;height: 175px;max-height: 100%}
+.content{}
+.header_word{color: #666;font-size: 14px;background: white;padding:12px 15px;}
+
+.project_tit {height: 40px;padding: 0 16px;line-height: 40px; font-size: 16px;position: relative;background: white;font-weight: bold;}
+.project_tit i{ display: inline-block;width: 0.11111rem;
+    height: 0.81481rem; background: #fe5a7c; margin-right: 6px;
+    position: relative; top: 1px;}
+ .vouchers{height: 88px;background: white;position: relative;}
+ .vouchers .receive{background: url('../images/vouchers.png')no-repeat;width: 300px;min-height:62px;background-size: 100%;margin:0 auto;position: relative;top: 10px;}
+ .vouchers .receive strong{display: inline-block;width: 33%;height:62px;color: #fe5a7c;font-size: 38px;vertical-align: middle;text-align: center;line-height: 62px;}
+ .vouchers .receive span{width: 39%;height: 62px;display: inline-block;color: #fe5a7c;vertical-align: middle;font-size: 15px;line-height: 16px;font-weight: bold;padding-left:8px;padding-right:8px;padding-top:12px;}
+ .vouchers .receive span small{font-size:0.6em;font-weight: normal;display: block;}
+ .item {border-color: #e1e1e1;background-color: #fff;color: #444; position: relative;z-index: 2; display: block;margin: -1px; padding: 16px 16px 0 16px;border-width: 1px; border-style: solid;font-size: 16px;}
+.item-thumbnail-left {padding-top: 0px;padding-left: 84px;min-height:68px;    line-height: 18px;}
+.img_circle{position: absolute;top: 10px;left: 15px; max-width: 65px;max-height: 65px; width: 100%; height: 100%;border-radius: 50%;
+    border: 1px solid #e1e1e1; overflow: hidden;}
+.item_fr_text span,.item_fr_text em{display: block;white-space: normal;}
+.item_fr_text strong{font-size: 16px;font-weight: normal;}
+.item_fr_text p small{color: #999;padding-left: 8px;}
+.item_fr_text span{color: #aaa;font-size: 12px;position: relative;white-space: nowrap;width: 100%;text-overflow: ellipsis;overflow: hidden;}
+.item_fr_text em{color: #aaa;font-size: 13px;height: 30px;line-height: 30px;}
+.item_fr_text .pb{padding-bottom:5px;}
+.item_fr_text em q{font-style: normal;padding-right: 18px;vertical-align: middle;padding-left: 3px;}
+.small_img{width: 18px;vertical-align: middle;}
+
+/*健康优选*/
+.row{display: flex;background: white;position: relative;}
+.col-33{-webkit-box-flex: 0;-webkit-flex: 0 0 33.3%;-moz-box-flex: 0;
+  -moz-flex: 0 0 %33.3;-ms-flex: 0 0 33.3%;flex: 0 0 33.3%;}
+ .product{position: relative;padding: 10px 0;}
+.product_img{width:100px;height:100px;margin: auto;}
+.product p{font-size: 12px;color: #666666;}
+.product span{font-size: 15px;color: #fe5a7c;}
+.product .info{width: 100px;margin: auto;}
+.fu_tit{width: 100%;height: 42px;line-height: 42px;color: #fe5a7c;font-size: 14px;background: white;text-align: center;}
+.fu_tit img{width: 7px;padding-left: 5px;vertical-align: middle;}
+.fu_tit span{vertical-align: middle;}
+
+/*育儿头条*/
+.img_square{position: absolute;top: 10px;left: 15px; max-width: 90px;max-height: 67px; width: 100%; height: 100%;overflow: hidden;}
+.item-new-left {padding-top: 0px;padding-left: 102px;min-height:68px;    line-height: 18px;}
+.item-new-left p{color: #666666;font-size: 16px;}
+
+/*二维码*/
+.footer{width:100%;background: white;text-align: center;padding: 18px 0}
+.code{margin:8px auto;;width: 128px;height: 128px;}
+.code img{width: 100%}
+.footer p{font-size: 12px;padding-bottom: 4px;}
+
+
+
+.Popups-box{  width: 100%; height: 100%; position: fixed; top:0; left: 0; z-index: 99; background-color: rgba(0,0,0,0.5); }
+.Popups-box .Popups-content{position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-o-transform: translate(-50% -50%);-moz-transform: translate(-50%, -50%);
+	width: 250px;  background-color: #fff; border-radius: 5px; padding: 0px 15px 0 15px;
+
+}
+.Popups-box .Popups-content >p{ text-align: center; margin: 30px 0; }
+.Popups-box .Popups-content .btns-box{ border-top: 1px solid #e1e1e1;  text-align: center; margin-top: 20px;}
+.Popups-box .Popups-content .btns-box span{ display: inline-block; line-height: 40px; width: 50%;box-sizing: border-box;; }
+.Popups-box .Popups-content .btns-box span.View{  color: #fe5a7c; border-right: 1px solid #e1e1e1; }
+
+.hide{display: none;}
+
+.Popups-box .erwei-popups{width: 200px; padding:15px; }
+.Popups-box .erwei-popups img{max-width: 100%; max-height: 100%;}
+.Popups-box .Popups-content.erwei-popups >p{margin: 10px 0; font-size: 14px;}

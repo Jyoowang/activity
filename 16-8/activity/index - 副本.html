@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script src="js/rem.js"></script> 
+    <title>育儿</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<style type="text/css">
+		.header .s-hidden{display: none;}
+		.header-top{width: 100%; background:url('images/header_bj.jpg') no-repeat 0 0 ; background-size: 100% 100%;}
+		.top-center{width: 1000px; margin: 0 auto;}
+		.top-center img{ max-width: 100%; }
+        .middle .middle_top{margin:65px 0;}
+        .middle_bottom img{margin-top:20px;border-bottom: 1px solid #e6e6e6;padding-bottom: 36px}
+         .footer{width: 100%;background: #fe83a1;color: white;}
+         .footer .distance{padding: 26px 0}
+         .footer p{text-align: center;font-size: 16px;line-height: 26px}
+         .footer img{display: none;}
+         /*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+         @media (min-width: 768px) and (max-width: 991px){  
+         }
+         
+		@media (max-width:767px){ 
+			.top-center{width: 95%; }
+			.header .click_download{position: relative;}
+			.header .click_download a{width: 7.9rem;height: 2.1rem;border-radius: 0.35rem;position: absolute;top: 12.1rem;left: 3.8rem;}
+			.header .sm-hidden{display: none;}
+			.header .s-hidden{display: block}
+			.header .click_download img{width: 100%}
+			.middle .middle_bottom img{border-bottom:none;}
+			.footer p{font-size: 13px}
+			.footer img{display: block;}
+		}
+		/*在小于480px的屏幕里，微小屏幕，更低分辨率的手机*/  
+    @media (max-width: 480px){           
+			.footer p{font-size:8px}
+			.middle .middle_top{margin:50px 0;}
+    }
+	</style>
+		
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="sm-hidden">
+        	<div class="header-top">
+		       <div class="top-center">
+			      <img src="images/header_img.png">
+		       </div>
+	        </div>
+        </div>
+    	 <div class="s-hidden click_download">
+		   	   <img  class="" src="images/banner_2.jpg">
+		        <a href=""></a>
+		 </div>
+ </div>
+	
+	
+
+	<!--内容-->
+	<div class="middle">
+		<div class="top-center">
+		   <div class="middle_top">
+		   	 <img src="img/banner_two.jpg">
+		   </div>
+		   <div class="middle_bottom">
+			   	<img src="img/baby.jpg">
+			   <img src="img/question.jpg">
+			   <img src="img/food.jpg">
+	           <img src="img/free.jpg">
+		   </div>
+		  </div>
+	</div>
+	<!--内容 end-->
+
+	<!-- footer -->
+	<div class="footer">
+	   <div class="top-center">
+	   	<img src="img/footer.jpg">
+	   	<div class="distance">
+	   		<p>倍悦（上海）健康管理咨询有限公司</p>
+ 		    <p>Copyright © 2015-2016 All Rights Reserver</p>
+ 		    <p>沪卫网审[2015] 10159号 沪ICP备15008999号</p>
+	   	</div>
+		
+	   </div>
+		
+	</div>
+ 
+</body>
+
+</html>

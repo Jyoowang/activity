@@ -1,0 +1,29 @@
+body, div,{ margin:0; padding:0;}
+.auto{width: 14.566667rem;margin: 0 auto;}
+ol, ul{list-style:none;}
+.fl{float: left ;}
+.fr{float:right;}
+
+.auto img{width: 100%}
+.what{margin-top:2.304rem}
+ .title{position: relative;min-height: 0.726667rem;margin-bottom: 1.664rem}
+ .title .bg{font-size:1.024rem;color:#333;font-family:"Microsoft YaHei";height: 0.981333rem;background:white;text-align:center;position:absolute;z-index: 10;left: 2.613333rem;font-weight: bold;}
+ .title .line{height:0.021333rem;width: 14.666667rem;border:none;border-bottom: 0.021333rem solid #aaa;position: absolute;top: 0.611333rem}
+.what p{font-size: 0.768rem;color:#4d4d4d;font-family:"Microsoft YaHei";}
+
+.how{margin-top: 2.053333rem;font-family:"Microsoft YaHei";}
+.how .icon{width:0.333333rem;margin-top: 2.081333rem;margin-left:0.426667rem}
+.how .icon img{width: 2.18rem;
+    height: 12.652rem;};
+.how .conn{width:10.666667rem;}
+.how ul{margin-left: 0.853333rem;margin-top: 0}
+.how ul li:first-child{font-size: 0.768rem;font-weight: bold;}
+.how ul li{color: #4d4d4d;font-size: 0.768rem;line-height:0.042667rem}
+.money{margin-top: 22.224rem;overflow:hidden;}
+.money .title .bg{left: 5.413333rem;}
+.money p{color: #4d4d4d;font-size: 0.768rem;text-align: center;font-family:"Microsoft YaHei";}
+.money .pink{color: #fe5a7c;font-size:1.024rem;font-weight: bold;}
+.money .pink span{font-size: 0.768rem;color:#4d4d4d}
+.question{margin-top: 2.053333rem;margin-bottom: 2.56rem}
+.question .title .bg{left: 0.413333rem}
+.question p{font-size: 0.768rem;color:#4d4d4d;font-family:"Microsoft YaHei";}
