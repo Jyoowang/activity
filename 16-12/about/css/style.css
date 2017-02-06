@@ -1,0 +1,31 @@
+.banner .click_download{position:relative;}
+.banner img{width: 100%;}
+.banner .click_download a { width: 8rem; height: 2.1rem;
+    border-radius: 0.49rem; position: absolute; top: 12.41rem;left: 3.97rem;}
+
+.page-conter{ padding: 0 15px; }
+
+.title-box{ border-bottom: 1px solid #aaa; position: relative; text-align: center; height: 11px; margin-top: 30px; margin-bottom: 25px; }
+.title-box span{ display: inline-block;padding: 0 5px; background-color: #fff; position: relative; font-size: 16px; font-weight: bold;  }
+
+.text-p{ color: #4c4c4c ;  font-size: 14px; line-height: 22px; }
+.text-p p{ margin-bottom: 15px; }
+
+.explanation-box{ overflow: hidden; text-align: center; }
+.explanation-box >img{width: 52px;  display: inline-block; vertical-align: middle; }
+.explanation-box .explanation-text{ margin-left: 15px;display: inline-block; vertical-align: middle;}
+.explanation-box .explanation-text .text-item{ margin-bottom: 15px;text-align: left; }
+.explanation-box .explanation-text .text-item>span{ font-size: 14px; color:#333333; font-weight: bold;line-height: 22px;}
+.explanation-box .explanation-text p{color: #4c4c4c ;  font-size: 14px; line-height: 22px; }
+
+.cost-box {text-align: center;}
+.cost-box p{color: #4c4c4c ;  font-size: 14px; line-height: 22px;}
+.cost-box p.Start{font-weight: bold;}
+.cost-box p span{ color: #fe5a7c;  font-size: 16px; }
+
+.footer{width: 100%;height: 140px;background: #fe83a1;}
+.footer p{color:white;text-align: center;font-size: 12px;}
+.footer .footer_top{height: 60px;border-bottom: 1px solid white;margin: 0 12px;}
+.footer .footer_top p{line-height: 27px; padding-top: 20px;}
+
+.footer .distance{padding-top:15px;line-height: 17px;}

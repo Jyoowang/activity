@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "育儿24小时";
+    Layout = null;
+
+}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title id="bigTitle">育儿24小时</title>
+
+<link href="~/Assets/css/erwei.css" rel="stylesheet" />
+<link href="~/Assets/css/style.css" rel="stylesheet" />
+<script src="~/Assets/js/doctorqrcode/jquery-1.8.3.min.js"></script>
+<script src="~/Assets/js/doctorqrcode/wx.js"></script>
+
+<script src="~/Assets/js/doctorqrcode/jweixin-1.0.0.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        window.share = {
+            title: '@ViewData["ShareTitle"]',
+            desc: '@ViewData["ShareContent"]',
+            imgUrl: '@ViewData["SharePic"]',
+            link: '@ViewData["ShareLink"]'
+        }
+        window.share_wx_api()
+        $('.head_area').height($(window).width() * 0.25);
+
+        var ww = new Image();
+        ww.onload = function () {
+            if (this.width > this.height) {
+                $(this).attr('height', '100%');
+            } else {
+                $(this).attr('width', '100%');
+            }
+            $('.head_area').html(this);
+        }
+        ww.src =  '@ViewData["SharePic"]';
+
+    })
+</script>
+
+<body style="text-align:justify;text-justify:inter-ideograph">
+
+    <div class='main' style='width: 100%'>
+        <div class='scoll'>
+            <div class="main_head">
+                <div class="head_area">
+
+                    @if (ViewData["HeadPic"] != null && ViewData["HeadPic"].ToString() != "")
+                    {
+                        <div><img src="@ViewData["HeadPic"]" /></div>
+                    }
+                    else
+                    {
+                        <img src='~/Assets/images/Default_head.png' width="100%" />
+                    }
+
+                </div>
+                <p class="offic">
+                    <span style="font-size: 1.4em; margin-right: 5px">
+                        @ViewData["DoctorName"].ToString()
+                        <small>@ViewData["DoctorTitle"].ToString()</small>
+                    </span><br>@ViewData["HospitalName"].ToString()
+                </p>
+            </div>
+
+            <div class="invite span_bot"><img src="~/Assets/images/invite_inc01.png" /><span>邀请码：<small>@ViewData["InvitationCode"].ToString()</small></span></div>
+            <div class="erwei_box">
+                @if (ViewData["QRCode"] != null && ViewData["QRCode"].ToString() != "")
+                {
+                    <div><img src="@ViewData["QRCode"]" /></div>
+                }
+                else
+                {
+                    <div><img src="~/Assets/images/erwei_img01.jpg" /></div>
+                }
+                <p>请长按二维码识别，欢迎光临我的诊所</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+

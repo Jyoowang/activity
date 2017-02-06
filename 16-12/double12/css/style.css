@@ -1,0 +1,30 @@
+header img{width: 100%;}
+
+
+.subnav{width: 100%;min-height: 250px;background: #bf2736;padding-bottom: 14px;}
+.location{display: flex;text-align: center;align-items: center;width: 100%;}
+.location .location-item{flex: 1;padding-top:13px;padding-bottom: 10px;}
+.location-item img{width: 88%}
+.subnav .spilk{width: 92%;min-height: 142px;margin: 0 auto;font-size: 12px;}
+.spilk .spilk-tit{width: 100%;height:26px;background: url('../images/spilk-tit.png')no-repeat 0 0;background-size: 100% 100%;color:white;font-size:0.8em;text-align: right;text-shadow: 3px 3px 4px #dedede;line-height: 26px;}
+.spilk .spilk-con{min-height: 120px;}
+.spilk .spilk-con img{width:100%;}
+.spilk-con-right{display: inline-block;width:44%;height:100%;float: right;}
+.spilk-con-left{display: inline-block;width: 56%;height:100%;position: relative;}
+.spilk-con-left span{width:80px;height: 80px;display: block;border-radius: 50%;background:rgba(0,0,0,0.3);color: white;position: absolute;top: 50%;left: 50%;margin-top: -40px;margin-left: -40px;text-align: center;line-height: 80px;font-size: 16px;display:none;}
+
+article{margin-top: -10px;}
+.firsttit{width: 100%;min-height:3.73704rem;background:url('../images/baby.png') no-repeat 0 0;background-size: 100% 100%;}
+.secondtit{width: 100%;min-height:3.73704rem;background:url('../images/momo.png') no-repeat 0 0;background-size: 100% 100%;}
+
+.product{width: 96%;display: flex;flex-wrap: wrap;align-items: center;justify-content: center;margin:0 auto;margin-top: 8px;}
+.product .item{flex: 49%;border-right: 1px dashed #f60951}
+.product .noline{border-right:none;}
+.item .jzimg{height: 220px;position: relative;padding:10px 6px;padding-bottom: 12px;}
+.item .jzimg img{width: 100%}
+.item img{width: 100%}
+
+
+.footer img{width: 100%}
+#returntop {position: fixed;right: 0;bottom: 50px;}
+#returntop img{width:25px;}

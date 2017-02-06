@@ -1,0 +1,305 @@
+{
+	"schedule":[
+
+		{
+			"scheduleID":0,
+
+			"scheduleName":"12月17日  第一天",
+
+			
+					"scheduleList":[
+						{
+							"date":"08:00-08:15",
+							"text":"开幕式",
+							"docName":"郝创利 ",
+							"docTitle":"教授",
+							"docID":0
+						},
+						{
+							"date":"",
+							"text":"主持：郝创利 教授 艾涛 教授",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"08:15-08:45",
+							"text":"中国儿童慢性咳嗽诊断和治疗指南（2013修订）解读",
+							"docName":"陆权",
+							"docTitle":"教授",
+							"docID":1
+						},
+						{
+							"date":"08:45-09:15",
+							"text":"2016中国咳嗽指南解读",
+							"docName":"赖克方",
+							"docTitle":"教授",
+							"docID":2
+						},
+						{
+							"date":"09:15-09:45",
+							"text":"儿童心因性咳嗽的诊疗进展",
+							"docName":"盛锦云",
+							"docTitle":"教授",
+							"docID":3
+						},
+						{
+							"date":"09:45-10:00",
+							"text":"茶歇",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"",
+							"text":"主持：郝创利 教授 艾涛 教授",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"10:00-10:30",
+							"text":"迁延性细菌性支气管炎的诊疗进展",
+							"docName":"郝创利",
+							"docTitle":"教授",
+							"docID":0
+						},
+						{
+							"date":"10:30-11:00",
+							"text":"慢性阻塞性肺疾病－祛痰与抗氧化药物治疗进展",
+							"docName":"郑劲平",
+							"docTitle":"教授",
+							"docID":4
+						},
+						{
+							"date":"11:00-11:30",
+							"text":"典型咳嗽病例",
+							"docName":"盛锦云",
+							"docTitle":"教授",
+							"docID":3
+						},
+						{
+							"date":"11:30-12:00",
+							"text":"咳嗽变异性哮喘与非哮喘性嗜酸粒细胞支气管炎：关联性和诊治进展",
+							"docName":"林江涛",
+							"docTitle":"教授",
+							"docID":5
+						},
+						{
+							"date":"12:00-12:30",
+							"text":"瑞典斯卡西亚  FeNO卫星会",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"12:30-13:30",
+							"text":"午餐苏州市医学会变态反应专业委员会委员会议（地点：门诊楼四楼儿科临床学院2号教室",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"",
+							"text":"主持：张秀琴 教授  沈照波 教授",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"13:30-14:00",
+							"text":"胃食管反流性咳嗽的诊断和鉴别诊断",
+							"docName":"邱忠民",
+							"docTitle":"教授",
+							"docID":6
+						},
+						{
+							"date":"14:00-14:30",
+							"text":"儿童慢性咳嗽的临床病因诊断思路",
+							"docName":"尚云晓",
+							"docTitle":"教授",
+							"docID":7
+						},
+						{
+							"date":"14:30-15:00",
+							"text":"过敏性(变应性)咳嗽的诊疗进展",
+							"docName":"刘翰旻",
+							"docTitle":"教授",
+							"docID":8
+						},
+						{
+							"date":"15:00-15:15",
+							"text":"茶歇",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"",
+							"text":"主持：蔡栩栩 教授  董晓艳 教授",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"15:15-15:45",
+							"text":"FeNO在儿童慢性咳嗽诊治中的应用",
+							"docName":"成焕吉",
+							"docTitle":"教授",
+							"docID":9
+						},
+						{
+							"date":"15:45-16:15",
+							"text":"诱导痰技术在儿童慢性咳嗽中的应用",
+							"docName":"罗炜",
+							"docTitle":"教授",
+							"docID":10
+						},
+						{
+							"date":"16:15-16:45",
+							"text":"支气管镜在儿童慢性咳嗽诊疗中的应用",
+							"docName":"邓力",
+							"docTitle":"教授",
+							"docID":11
+						},
+						{
+							"date":"16:45-17:15",
+							"text":"儿童喘息非典型病原感染及抗感染治疗",
+							"docName":"张建华",
+							"docTitle":"教授",
+							"docID":12
+						},
+						{
+							"date":"17:15-17:45",
+							"text":"临床咳嗽特征对儿童慢性咳嗽诊断提示及相关检查的临床意义",
+							"docName":"郝创利",
+							"docTitle":"教授",
+							"docID":0
+						},
+						{
+							"date":"17:45-18:15",
+							"text":"新耶格卫星会",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"18:30",
+							"text":"晚宴（地点：乐龄公寓一楼餐厅）",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"19:30-21:00",
+							"text":"儿童慢性咳嗽协作组工作会议（地点：乐龄公寓二楼图书馆）",
+							"docName":"慢性咳嗽协作组全体成员",
+							"docTitle":"",
+							"docID":""
+						}
+								
+					]
+			
+
+		},
+
+		{
+			"scheduleID":1,
+
+			"scheduleName":"12月18日 第二天",
+
+			
+					"scheduleList":[
+						{
+							"date":"",
+							"text":"主持：陈强 教授  吴巧珍 教授",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"08:00-08:30",
+							"text":"儿童慢性咳嗽的研究进展",
+							"docName":"陈强",
+							"docTitle":"教授",
+							"docID":13
+						},
+						{
+							"date":"08:30-09:00",
+							"text":"胸闷变异性哮喘的诊治新进展",
+							"docName":"黄华琼",
+							"docTitle":"教授",
+							"docID":14
+						},
+						{
+							"date":"09:00-09:30",
+							"text":"儿童慢性咳嗽诊断及鉴别诊断流程",
+							"docName":"鲍一笑",
+							"docTitle":"教授",
+							"docID":15
+						},
+						{
+							"date":"09:30-10:00",
+							"text":"儿童湿性咳嗽的诊治",
+							"docName":"罗征秀",
+							"docTitle":"教授",
+							"docID":16
+						},
+						{
+							"date":"10:00-10:15",
+							"text":"茶歇",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"",
+							"text":"主持：苏玉华 教授 王宇清 教授",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"10:15-10:45",
+							"text":"上气道咳嗽综合征的诊疗进展",
+							"docName":"严永东",
+							"docTitle":"教授",
+							"docID":17
+						},
+						{
+							"date":"10:45-11:15",
+							"text":"儿童慢性咳嗽的治疗",
+							"docName":"刘长山",
+							"docTitle":"教授",
+							"docID":18
+						},
+						{
+							"date":"11:15-11:45",
+							"text":"儿童感染及感染后咳嗽的诊治进展",
+							"docName":"王宇清",
+							"docTitle":"教授",
+							"docID":19
+						},
+						{
+							"date":"11:45-12:00",
+							"text":"儿童慢性咳嗽的治疗",
+							"docName":"闭幕式",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"下午",
+							"text":"现场观摩皮肤点刺试验、气道激发试验、SIT的实践",
+							"docName":"顾秀萍",
+							"docTitle":"",
+							"docID":""
+						}
+					]
+				
+
+		},
+
+	]
+
+
+}

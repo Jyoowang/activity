@@ -1,0 +1,191 @@
+/* 重置样式，不可更改文件 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+* {
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+html {
+  width:100%;
+  height:100%
+
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-table;
+}
+html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+.clear{ clear: both; width: 100%;}
+button {
+  padding: 0;
+  border: 0;
+  background: none;
+  display: block;
+}
+textarea::-webkit-input-placeholder {
+  color: #d5d5d5;
+}
+img {
+  border:0;
+  display:block;
+    max-width: 100%;
+}
+body {
+  background: #f6f6f6;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  font-family: '微软雅黑';
+
+}
+.c_gray{
+	color: #a8a8a8;
+}
+.c_pink{
+	color: #e92d6f;
+}
+.c_white{
+	color:#fff;
+}
+.c_dark{
+	color:#767676;
+}
+
+.pos_ab{
+	position: absolute;
+}
+.pos_fix{
+	position: fixed;
+}
+.pos_rel{
+	position: relative;
+}
+.pt_10{
+	padding-top:10px	
+}
+.pt_5{
+	padding-top:5px	
+}
+.pt_15{
+	padding-top:15px	
+}
+.pt_20{
+	padding-top:20px	
+}
+
+.mt_10{
+	margin-top:10px	
+}
+.mt_5{
+	margin-top:5px	
+}
+.mt_15{
+	margin-top:15px	
+}
+.mt_20{
+	margin-top:20px	
+}
+
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+
+body{overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;}

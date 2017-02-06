@@ -1,0 +1,121 @@
+body, div, span, object, frame, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input, menu input {
+	margin: 0;
+	padding: 0;
+}
+a {
+	background: transparent;
+	text-decoration: none;
+	color: #000;
+}
+a:active, a:hover {
+	outline: 0;
+	text-decoration: none;
+	color: #000;
+}
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #373737;
+}
+img {
+	display: block;
+}
+.roll {
+	overflow: hidden;
+	width: 25%;
+	float: left;
+}
+.loading {
+	width: 100%;
+}
+.iw {
+	width: 8%;
+}
+
+.iw1 {
+	width: 30%;
+}
+.leftImg {
+	left: 10%;
+	top: 28.2%;
+}
+.leftImg1 {
+	left: 2%;
+	top: 28.2%;
+}
+.rightImg1 {
+	right: 5%;
+	top: 28.2%;
+}
+.rightImg {
+	right: 10%;
+	top: 28.2%;
+}
+.bg {
+	width: 100%;
+}
+.submit {
+	width: 26%;
+	left: 68%;
+}
+.postion {
+	position: absolute;
+}
+.down {
+
+}
+.downM {
+	bottom: 7%;
+	width: 40%;
+	left: 31.25%;
+}
+.text {
+	width: 48%;
+	left: 8%
+}
+.new {
+	float: left;
+	width: 30%;
+	margin-left: 2.5%
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: left;
+}
+
+#scroller li {
+	padding: 5px 0;
+}

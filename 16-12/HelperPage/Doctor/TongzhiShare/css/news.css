@@ -1,0 +1,15 @@
+.head_Box{width: 100%;background:#fe5a7c; overflow: hidden;}
+.head_top{width: 100%;padding-top: 15px;padding-bottom: 15px;}
+.head_top p{width:100%;text-align: center;font-size: 1em;color: #FFFFFF}
+.head_top span{ position: absolute; right: 5%; top: 15px;font-size:0.9em; color: #FFFFFF}
+.head_top>img{ width:5%; position: absolute;top:15px;left:7%; z-index: 66;}
+
+.news_show{width: 100%; padding: 0.7em 4%; box-sizing: border-box;}
+.news_show h1{ font-size: 1.1em; color: #333333; font-weight: normal; line-height: 1.3em;}
+.news_show>p{ border-bottom: 1px solid #e1e1e1; color: #aaaaaa; font-size: 0.7em;line-height: 2.5em;}
+.text{ padding: 0.5em 0;}
+.text p{ color: #333333; font-size: 0.9em; line-height: 1.5em; padding-bottom: 15px;}
+
+
+.down{ position: fixed; left: 0; bottom: 0; z-index: 999; width: 100%; display: inline-block;}
+

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>育儿24小时</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src='jquery.js'></script>
+    <script src="../../Areas/Admin/Assets/Plugins/query/jquery.query.js"></script>
+   
+    <script src="share.js?version=2.0"></script>
+    
+
+    <script>
+        var console = console || {
+            "log": function () {
+            }
+        };
+
+    </script>
+    <script>
+        $(window).ready(function () {
+            $('body').css('font-size', Math.floor(16 * $(window).width() / 320));
+
+        })
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, false);
+    </script>
+</head>
+
+<body>
+    <!-- Application container. -->
+    <div style="width: 100%;">
+        <img src='bg.jpg' width="100%" />
+        <div class='content'>
+            <div class='usehead'>
+                <img src='logo.png' width="100%" id="bgLogo" />
+            </div>
+            <p style='color: #fff; font-size: 2em;'>
+                育儿<b>24</b>小时
+            </p>
+            <p style='color: #fff' id="slogan">
+                全天候守护你和宝宝
+            </p>
+            <p style='margin-top: 15%' id="invitationText">
+                亲爱的,这么拉轰的育儿神器你也不用？
+					<br />
+                呐，邀请码在这里，赶快来用吧:
+            </p>
+            <div class='code'>
+                <p class='code_num' id="inCode"></p>
+            </div>
+            <div class='link' style='margin-top: 50px' id="footer">
+                <p id="urlP">
+                   <a href="http://a.app.qq.com/o/simple.jsp?pkgname=yuer.shopkv.com.shopkvyuer" style="font-size:32px" id="dowd">立即下载</a> 
+                </p>
+                <a>
+                    <p style="font-size: 0.7em">
+                      <!--  <a href="http://www.yuer24h.com/" id="xzUrl">http://www.yuer24h.com/</a> -->
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

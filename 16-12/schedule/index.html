@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="balack" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title></title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="title">会议日程</div>
+		<div class="date">
+				<!-- 
+                    <p>11月11日    第一天</p>
+                    <div class="public-list">
+                        <div class="con line-bot">
+                            <span class="con-left">08:00-08:05</span>
+                            <span class="con-middle">盛锦云教授致辞</span>
+                            <span class="con-right"></span>
+                        </div>
+                    </div> 
+                -->	
+		 </div>
+	</div>
+
+	<script type="text/javascript">
+    	$(document).ready(function () {
+
+            var urlData = locationObject();
+
+    	 	$.ajax({ 
+                url: 'js/data/schedule.json',
+                type: "GET",
+                dataType: "text",
+                contentType: "application/x-www-form-urlencoded",
+                success: function(response) {
+                	var dataJson = eval('(' + response + ')'); 
+                    var index = 0;
+                    if (urlData.day) {
+                        index = parseInt(urlData.day-1);
+                    }
+                	pushdata(dataJson.schedule[index]);
+
+                    $('.con .con-right').on('click',getShow)
+
+                	
+                },
+                error:function(xhr, status, err){
+                	console.log(err)
+                }
+            })
+
+            function pushdata(value){
+                console.log(value)
+            	var str='';
+
+                str+='<p>'+value.scheduleName+'</p>'
+
+                str+='<div class="public-list">'
+
+                var schedule = value.scheduleList
+
+                $.each(schedule,function(){
+                   
+                    str+='<div class="con line-bot">'
+
+                    if(this.date == ''){
+                        str+='<span class="con-middle con-host">'+this.text+'</span>'
+                    }else{
+                        str+='<span class="con-left">'+this.date+'</span>'
+                        str+='<span class="con-middle">'+this.text+'</span>'
+                        str+='<span class="con-right" data-id="'+this.docID+'">'+this.docName+this.docTitle+'</span>'
+                    }
+                    
+                   str+='</div>'      
+                })
+                str+='</div> '
+
+            	$(".date").html(str);
+
+            }
+
+            //跳转到医生详情
+            function getShow(){
+                var docid = $(this).attr('data-id')
+                if(docid){
+                    // window.location.href='docdetail.html?docid='+ docid
+                    window.location.href='http://www.yuer24h.com/schedule/docdetail.html?docid='+docid
+                }
+            }
+
+
+           
+            function locationObject(){
+        		if (window.location.search) {
+            		var tt = String(window.location.search).replace('?', '')
+            		var arr = tt.split('&')
+            		var retu = {}
+            		for (var i = 0; i < arr.length; i++) {
+                		var newp = arr[i].split('=')
+                		retu[newp[0]] = newp[1]
+            		}
+            		return retu
+        		} else {
+            		return null
+        		}
+    		}
+
+    	})
+	</script>
+</body>
+</html>

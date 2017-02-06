@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>圣诞狂欢</title>
+	<script type="text/javascript" src="js/libs/zepto.min.js"></script>
+    <script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/wx.js"></script>
+    <link rel="stylesheet" href="css/public.css">   
+    <link rel="stylesheet" href="css/style.css">   
+</head>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?995ce2c8fa599d419b90f7856d8e9774";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+<body>
+	<div id="App">
+		<header>
+            <img src="images/banner.png" alt="">
+        </header>
+        
+        <article>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;434&quot;}" id="product_0" onclick="_hmt.push(['_trackEvent', 'product_0', 'product_0'])" class="jzimg activity"><img src="images/activity.png" alt=""><i></i></a>
+        <!-- 萌宝 -->
+            <div id="baby" class="firsttit"></div>
+           
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;403&quot;}" id="product_1" onclick="_hmt.push(['_trackEvent', 'product_1', 'product_1'])" class="jzimg"><img src="images/product1.png" alt=""><i></i></a>
+
+            <div id="momo" class="secondtit"></div>
+                
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;209&quot;}" id="product_2" onclick="_hmt.push(['_trackEvent', 'product_2', 'product_2'])" class="jzimg"><img src="images/product2.png" alt=""><i></i></a>
+               
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;408&quot;}" id="product_3" onclick="_hmt.push(['_trackEvent', 'product_3', 'product_3'])" class="jzimg"><img src="images/product3.png" alt=""><i></i></a>
+             
+            <div id="momo" class="thirdtit"></div>  
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;200&quot;}" id="product_4" onclick="_hmt.push(['_trackEvent', 'product_4', 'product_4'])" class="jzimg"><img src="images/product4.png" alt=""><i></i></a>
+               
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;242&quot;}" id="product_5" onclick="_hmt.push(['_trackEvent', 'product_5', 'product_5'])" class="jzimg line-r"><img src="images/product5.png" alt=""><i></i></a>
+               
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;400&quot;}" id="product_6" onclick="_hmt.push(['_trackEvent', 'product_6', 'product_6'])" class="jzimg"><img src="images/product6.png" alt=""><i></i></a>
+               
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;397&quot;}" id="product_7" onclick="_hmt.push(['_trackEvent', 'product_7', 'product_7'])" class="jzimg"><img src="images/product7.png" alt=""><i></i></a>
+               
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;396&quot;}" id="product_8" onclick="_hmt.push(['_trackEvent', 'product_8', 'product_8'])" class="jzimg"><img src="images/product8.png" alt=""><i></i></a>
+                
+            <div class="footer">
+                <img src="images/footer.png" alt="">
+            </div>
+        </article>
+        
+        <div id="returntop">
+            <img src="images/return.png" alt="">
+        </div>
+
+	</div>
+</body>
+<script>
+    window.onload=function(){ 
+        var oBtn = document.getElementById('returntop');    
+        var timer = null;    
+        var bFlag = false;         
+        oBtn.onclick=function(){    
+            moveScroll(0,500);     
+        }; 
+        function moveScroll(target,time){ 
+            var start = document.documentElement.scrollTop || document.body.scrollTop; 
+            var dis = target - start;    
+            var count = Math.floor(time/30);    
+            var n=0;             
+            clearInterval(timer);    
+            timer = setInterval(function(){    
+                n++;    
+                bFlag=false;    
+                document.documentElement.scrollTop = start + dis*n/count;    
+                document.body.scrollTop = start+dis*n/count;    
+                if(n==count){    
+                    clearInterval(timer);    
+                }     
+            },30);    
+        } 
+    };    
+
+    Zepto(function($){ 
+
+       
+        setInterval(countdown,1000)
+
+        function countdown(){
+            var currentDay = new Date().getTime();
+            var endDay = new Date("Decemeber 20,2016 00:00:00").getTime();
+            if (currentDay>=endDay) {
+                $('.activity').hide();
+            }
+        }
+        
+       
+
+        function yuer24hshare(){
+            var urls = '{"title": "圣诞惊喜享不停！19日下单前五名，实付金额满150就送土鸡蛋一盒（30枚装），还有活动专场满减包邮！一起健康过圣诞Merry Christmas！","imgUrl":"http://www.yuer24h.com/Christmas/images/LOGO.jpg?v2016","link":"http://www.yuer24h.com/Christmas/index.html?v2016","desc":"圣诞来袭！你买我就送！！"}'
+
+            window.location.href = "yuer24hshare://" + encodeURIComponent(urls)
+        }
+
+
+        if(Util.wechatBrowse()){
+            var UserID = 0;
+            var info = Util.locationObject()
+            if (info) {
+                if (info['UserID']) {
+                    UserID = info['UserID'];
+                }
+                if (info['isApp']) {
+                    var urls = '{"title": "'+ window.share.title +'","desc": "' + window.share.desc + '","imgUrl":"'+  window.share.imgUrl +'","link":"'+  window.share.link +'"}'
+
+                window.location.href = "yuer24hshare://" + encodeURIComponent(urls)
+                }
+            }
+            $("a").each(function(index){                    
+                var attr = $(this).attr("href");
+                var data = JSON.parse(attr.split('//')[1]);
+                    var url=''
+                    switch(parseInt(data.Type)){
+                        case  28:   //活动
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+ data.TypeName;
+                        break;
+                        case  11:   //产品详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=4_0_'+data.TypeName;
+                        break;
+                        case  14:   //医生列表
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+data.TypeName;
+                        break;
+                        case  13:   //解决方案详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=5_0_'+data.TypeName;
+                        break;
+                    }
+                    $(this).attr('href',url)
+            })
+        }else{
+             yuer24hshare();
+        }
+    })
+
+      
+
+
+
+
+</script>
+</html>

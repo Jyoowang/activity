@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+	<style type="text/css">
+		body{background:url(http://7u2omr.com1.z0.glb.clouddn.com/bg.jpg);}
+		.logodiv { width:60%; margin:0 auto; padding:30% 20%; text-align:center;}
+		.logodiv img {width:90%;}
+        .inc02{     background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    border: 1px solid #f00; display:none;}
+	</style>
+</head>
+<body>
+    <!--div style="display:none" id="wx">微信扫描无法下载，请点击右上角切换其他浏览器打开.</div-->
+    <script src="../Areas/Admin/Assets/Plugins/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../Areas/Admin/Assets/Modules/comm.js"></script>
+    <script>
+        window.onload = function () {
+            $.post('/api/Notice/PostQRCodeStatistics', { "ID": 1 }, function () {
+
+            });
+            if (isWeiXin()) {
+                $('.inc02').show()
+            } else { 
+                switch (getDevice()) {
+                    case 'Android':
+                        $.post('/api/Notice/PostQRCodeStatistics', { "ID": 2 }, function () {
+                            window.location.href = "http://7u2omr.com1.z0.glb.clouddn.com/yuer_yonghuduan_v3.1.4_2016-04-14_Market_guanwang.apk";
+                        });
+                       
+                        break;
+                    case 'iOS':
+                        $.post('/api/Notice/PostQRCodeStatistics', { "ID": 3 }, function () {
+                             window.location.href = "https://itunes.apple.com/cn/app/id963676121"; 
+                        });
+                       
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+
+    </script>
+	
+	<div class="logodiv"><img src="http://7u2omr.com1.z0.glb.clouddn.com/logo-user.png"></div>
+    <div  class="inc02"><img src="and.png" alt="" width="100%"></div>
+</body>
+
+</html>

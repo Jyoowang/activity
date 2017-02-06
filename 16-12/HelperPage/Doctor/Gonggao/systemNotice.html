@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <script src="../ArticleShare/js/jquery-1.8.3.min.js"></script>
+
+    <title></title>
+</head>
+<body>
+    <img src="Doctoryindao3.png" style="width: 100%;" />
+    <script>
+        $(function () {
+          
+            if (document.documentElement.clientWidth) {//获取页面可见范围的宽
+                var width = 320;
+                var scale = document.documentElement.clientWidth / width;//获取页面可见范围的宽与320的比例
+                var viewport = 'width=' + width + ", initial-scale=" + scale + ", maximum-scale=" + scale + ", minimum-scale=" + scale + ', user-scalable=no, minimal-ui';//设置宽，默认比例，最大比例，最小比例，手动缩放
+                document.getElementsByName('viewport')[0].setAttribute('content', viewport);
+            }
+        });
+    </script>
+</body>
+</html>

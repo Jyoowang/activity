@@ -1,0 +1,20 @@
+.head_Box{width: 100%;background:#fe5a7c; overflow: hidden;}
+.head_top{width: 100%;padding-top: 15px;padding-bottom: 15px;}
+.head_top p{width:100%;text-align: center;font-size: 1em;color: #FFFFFF}
+.head_top span{ position: absolute; right: 5%; top: 15px;font-size:0.9em; color: #FFFFFF}
+.head_top>img{ width:5%; position: absolute;top:15px;left:7%; z-index: 66;}
+
+.news_show{width: 100%; padding: 0.7em 4%; box-sizing: border-box;}
+.news_show h1{ font-size: 18px; color: #333333; font-weight: normal; line-height: 24px; margin-bottom: 2px}
+.news_show>p{ border-bottom: 1px solid #e1e1e1; color: #aaaaaa; font-size: 14px;line-height: 22px; padding-bottom: 5px}
+.text{ padding: 0.5em 0;}
+.text p{ color: #333333; font-size: 15px; }
+.text img{max-width: 100%;}
+.main{margin-bottom: 166px;}
+
+.footer-erwei{position: fixed; bottom: 0; left: 0;width: 100%;  z-index: 5; overflow: hidden; background-color: #fe5a7c;box-sizing: border-box;}
+.erwei-box{position: absolute; left: 16px; top:10px; width: 120px; height: 120px; padding: 5px; background-color: #fff;}
+.footer-erwei img{max-width: 100%;max-height: 100%;}
+.erwei-text{width: 100%; font-size: 14px; color: #fff;padding-top: 5px; margin-top: 5px;}
+.erwei-text p{ line-height: 20px;}
+

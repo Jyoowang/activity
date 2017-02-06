@@ -1,0 +1,8 @@
+#App img{width: 100%}
+.firsttit{width: 100%;min-height:76px;background: url('../images/title1.png') no-repeat;background-size: 100%; }
+.secondtit{width: 100%;min-height:76px;background: url('../images/title2.png') no-repeat;background-size: 100%; }
+.thirdtit{width: 100%;min-height:76px;background: url('../images/title3.png') no-repeat;background-size: 100%; }
+
+.footer img{width: 100%}
+#returntop {position: fixed;right: 0;bottom: 50px;}
+#returntop img{width:25px;}

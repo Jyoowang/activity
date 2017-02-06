@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>好医生榜</title>
+	<script type="text/javascript" src="js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/util.js?v2016"></script>
+	<script type="text/javascript" src="js/server.js?v2016"></script>
+	<script type="text/javascript" src="js/wx.js?v2016"></script>
+    <link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e05ce320ff4ef502f4ad0e8c4456a452";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<body id="App">
+    <header>
+        <img src="images/banner.png" alt="">
+        <div class="slogan">
+            <p>经历一年的努力，育儿24小时已经为数十万名妈妈提供了专业、便捷的健康育儿服务，通过妈妈们的口碑反馈，我们发布“育儿24小时·妈妈最爱好医生年度榜”，希望帮到更多妈妈。</p>
+           
+        </div>
+    </header>
+    <div class="content">
+        <div class="docbox" id="doc-1" onclick="_hmt.push(['_trackEvent', 'doc-1', 'doc-1'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>中国第一位</span>
+                            <p>儿童医疗心理辅导师</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc1.png" alt=""></div>
+                                <div class="doc-name">程祺</div>
+                            </div>
+                            <p><span>擅长：</span>儿童医疗心理创伤；儿童情绪问题；儿童（包括特殊儿童）行为发育评估；情绪取向的亲子咨询。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>语气很理性，回答的不仅专业而且全面。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="1003">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="docbox" id="doc-2" onclick="_hmt.push(['_trackEvent', 'doc-2', 'doc-2'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>国家级心理咨询师</span>
+                            <p>丰富的心理咨询经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc2.png" alt=""></div>
+                                <div class="doc-name">王昀</div>
+                            </div>
+                            <p><span>擅长：</span>家庭育儿咨询、婚姻情感咨询。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>语气温柔，善于倾听，引导妈妈自己发现问题，并给出指导意见</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="419">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+         <div class="docbox" id="doc-3" onclick="_hmt.push(['_trackEvent', 'doc-3', 'doc-3'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>北京美中宜和妇儿医院</span>
+                            <p>10年妇产科临床经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc3.png" alt=""></div>
+                                <div class="doc-name">王蕾</div>
+                            </div>
+                            <p><span>擅长：</span>孕产妇的保健、产褥期的管理及妊娠期高血压疾病，妊娠期糖尿病等高危妊娠的管理。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>情商高，人很温柔，回答的很贴心</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="993">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+         <div class="docbox" id="doc-4" onclick="_hmt.push(['_trackEvent', 'doc-4', 'doc-4'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>杭州美中宜和妇儿医院</span>
+                            <p>博士 15年儿科临床经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc4.png" alt=""></div>
+                                <div class="doc-name">李静远</div>
+                            </div>
+                            <p><span>擅长：</span>消化系统疾病、呼吸系统疾病、心血管系统疾病。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>育儿好闺蜜，够温柔，够贴心，够专业。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="1168">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+         <div class="docbox" id="doc-5" onclick="_hmt.push(['_trackEvent', 'doc-5', 'doc-5'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>北京和睦家医院</span>
+                            <p>10余年临床工作经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc5.png" alt=""></div>
+                                <div class="doc-name">孙旭</div>
+                            </div>
+                            <p><span>擅长：</span>小儿发热、腹痛、腹泻.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>认真、谨慎、严禁，养育宝宝什么可以什么不可以，她会给你肯定的答案</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="945">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+         <div class="docbox" id="doc-6" onclick="_hmt.push(['_trackEvent', 'doc-6', 'doc-6'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>杭州美中宜和妇儿医院</span>
+                            <p>20余年儿科儿童保健经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc6.png" alt=""></div>
+                                <div class="doc-name">叶雯</div>
+                            </div>
+                            <p><span>擅长：</span>生长发育、营养喂养。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>经验很丰富，症状一说就明白怎么回事，给出的方法很实用</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="4864">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+         <div class="docbox" id="doc-7" onclick="_hmt.push(['_trackEvent', 'doc-7', 'doc-7'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>浙江大学医学院附属儿童医院</span>
+                            <p>20余年儿科临床经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc7.png" alt=""></div>
+                                <div class="doc-name">刘涛</div>
+                            </div>
+                            <p><span>擅长：</span>肠炎胃炎，肺炎哮喘，药物咨询，检验分析等。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>语气爽快、安慰，回答问题直切主题。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="4846">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="docbox" id="doc-8" onclick="_hmt.push(['_trackEvent', 'doc-8', 'doc-8'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>太原市中医研究所附属医院</span>
+                            <p>8年中医儿科临床经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc8.png" alt=""></div>
+                                <div class="doc-name">韩娟</div>
+                            </div>
+                            <p><span>擅长：</span>中医儿科及小儿推拿</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>很温柔、态度好、情商高，回答的又很专业。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="986">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="docbox" id="doc-9" onclick="_hmt.push(['_trackEvent', 'doc-9', 'doc-9'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>上海市黄浦区妇幼保健所</span>
+                            <p>丰富的儿童保健临床经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc9.png" alt=""></div>
+                                <div class="doc-name">马力梅</div>
+                            </div>
+                            <p><span>擅长：</span>儿童体格发育、心理行为发展。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>语气肯定，经验丰富，回答全面，知无不言。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="237">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="docbox" id="doc-10" onclick="_hmt.push(['_trackEvent', 'doc-10', 'doc-10'])">
+            <div class="doc-block">
+                <div class="doc-content">
+                    <div class="doc-detail">
+                        <div class="doc-title">
+                            <span>中国核医院北京401医院</span>
+                            <p>12年眼科临床经验</p>
+                        </div>
+                        <div class="doc-text">
+                            <div class="doc-pic-box">
+                                <div class="doc-pic"><img src="images/doc10.png" alt=""></div>
+                                <div class="doc-name">崔迎欣</div>
+                            </div>
+                            <p><span>擅长：</span>儿童眼病，眼底病，先天性眼科疾病，泪道疾病诊治。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="evaluate-box">
+                        <div class="evaluate-pic"><img src="images/momo.png" alt=""></div>
+                        <div class="evaluate-text">
+                            <i></i>
+                            <p>亲切，专业，有耐性。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-box" data-id="618">立即咨询</div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+       
+        <!-- <div class="docbox">
+             <div class="doctop">
+                 <div class="docdetail">
+                     <div class="pic jzimg"><img src="images/doc10.png" alt=""><i></i></div>
+                     <div class="docname">
+                         <p>中国核医院北京401医院</p>
+                         <span>从事眼科专业12年</span>
+                     </div>
+                     <div class="skilful">
+                         <div class="label"><img src="images/name.png" alt=""><span>崔迎欣</span></div>
+                         <div class="text">
+                              <p><strong>擅长：</strong>儿童眼病，眼底病，先天性眼科疾病，泪道疾病诊治。</p>
+                         </div>
+                      </div>
+                 </div>
+             </div>
+             <div class="boxfoot" data-id="618">
+                <div class="docbottom">
+                    <div class="momo">
+                        <div class="mopic"><img src="images/momo.png" alt=""></div>
+                        <div class="motext">
+                             <p>妈妈点评</p>
+                             <div class="comment">亲切，专业，有耐性。</div>
+                        </div>
+                    </div>
+                    <div class="butt">立即咨询</div>
+                </div>
+            </div>
+        </div> -->
+        
+       <!--  -->
+
+       <div class="activity">
+           <div class="tit">活动时间:</div>
+            <p>优惠券有效期：2016年12月30日<br/>预约时间：2016年12月30日</p>
+            <img src="images/cloud.png" alt="">
+       </div>
+       <div class="activity">
+           <div class="tit">活动规则:</div>
+            <p>点击领取<em>80元无门槛优惠券</em>，咨询的医生付款
+金额不足时，可微信补差。</p>
+       </div>
+       <div class="voucher">
+           <img src="images/voucher.png" alt="">
+       </div>
+       <footer><img src="images/footer.png" alt="">
+        <p class="small">注：此详情页排名顺序，仅按科室排序，无关人气。</p></footer>
+
+
+    </div>
+
+     <div class="Popups-box hide">
+        <div class="Popups-content hide new-popups">
+            <p>恭喜你领取成功！快去咨询医生吧。</p>
+            <div class="btns-box">
+                <span class="yes">确定</span>
+            </div>
+        </div>
+       <!--  <div class="Popups-content hide erwei-popups"> -->
+           <!--  <img src="images/code.png" alt=""> -->
+           <!--  <p>长按扫码关注公众号<br />我的钱包-代金券查看</p>
+        </div> -->
+    </div>
+
+</body>
+
+ 
+</html>

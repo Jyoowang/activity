@@ -1,0 +1,29 @@
+header img{width: 100%;}
+
+
+.subnav{width: 100%;min-height: 210px;background: #bf2736;padding-bottom: 14px;}
+.location{display: flex;text-align: center;align-items: center;width: 100%;}
+.location .location-item{flex: 1;padding-top:13px;padding-bottom: 10px;}
+.location-item img{width: 88%}
+.subnav .spilk{width: 92%;margin: 0 auto;font-size: 12px;}
+.spilk img{width:100%;}
+
+.spilk-con-left{display: inline-block;position: relative;}
+.spilk-con-left span{width:80px;height: 80px;display: block;border-radius: 50%;background:rgba(0,0,0,0.3);color: white;position: absolute;top: 50%;left: 50%;margin-top: -40px;margin-left: -40px;text-align: center;line-height: 80px;font-size: 16px;display:none;}
+
+article{margin-top: -10px;}
+.firsttit{width: 100%;min-height:3.73704rem;background:url('../images/baby.png') no-repeat 0 0;background-size: 100% 100%;}
+.secondtit{width: 100%;min-height:3.73704rem;background:url('../images/momo.png') no-repeat 0 0;background-size: 100% 100%;}
+
+.product{width: 96%;display: flex;flex-wrap: wrap;align-items: center;justify-content: center;margin:0 auto;margin-top: 8px;}
+.product .item{flex: 49%;border-right: 1px dashed #de9b9d}
+.product .noline{border-right:none;}
+.item .jzimg{height: 200px;position: relative;padding:10px 6px;padding-bottom: 12px;}
+.item .jzimg img{width: 100%}
+.item img{width: 100%}
+
+
+.footer img{width: 100%}
+.footer{margin-top: 10px;}
+#returntop {position: fixed;right: 0;bottom: 50px;}
+#returntop img{width:25px;}
