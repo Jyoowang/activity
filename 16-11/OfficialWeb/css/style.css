@@ -1,0 +1,183 @@
+.view1180{width:1180px;margin: 0 auto;}
+.view1000{width:1000px;margin: 0 auto;}
+
+/*header*/
+.view1180 .logo{margin-top: 40px;width: 230px;height: 70px;}
+.view1180 .logo img{width: 100%;height: 100%;}
+.header{height: 150px;}
+.header ul{float: right;margin-right:5px;margin-top: 66px}
+.header ul li{float: left;margin-right: 34px;font-size: 18px;}
+.cur{border-bottom: 5px solid #ff546c;}
+
+.header ul li a{ position: relative;display: inline-block;outline: none; color: #666;font-size: 18px;}
+.header ul li a::after{position: absolute;top: 100%; left: 0; width: 100%; height: 1px;background: #ff546c;content: ''; opacity: 0; -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;transition: height 0.3s, opacity 0.3s, transform 0.3s;-webkit-transform: translateY(-10px); -moz-transform: translateY(-10px);transform: translateY(-10px);}
+.header ul li a:hover::after {height: 5px; opacity: 1;-webkit-transform: translateY(0px); -moz-transform: translateY(0px);transform: translateY(0px);}
+.header .login{float: right;margin-top: 62px;}
+.header .login span{width: 70px;height: 30px;border: 1px solid #ff546c;border-radius: 5px;font-size: 16px;display: inline-block;line-height: 30px;text-align: center;color: #ff546c}
+.header .login span:hover{cursor: pointer;}
+.header .login .registered{background:#ff546c;color: white; margin-left: 18px;}
+
+/*banner*/
+.banner{width: 100%;background: #e8e8e8;min-height: 366px;}
+.banner .view1180{position:relative; ;}
+.banner .slogan{display: inline-block;z-index: 9;position: absolute;top: 68px;left: 82px;}
+.banner .slogan p{font-size: 46px;line-height: 58px;}
+.banner .slogan .tall{-webkit-animation:moveright 1s 0s 1  ease both;}
+.banner .slogan .weight{font-weight:bold;-webkit-animation:moveright 1s 0.5s 1  ease both;}
+.banner .slogan .red{color:#ff546c;-webkit-animation:moveright 1s 1s 1  ease both;}
+.banner .slogan span{display: inline-block;width: 140px;height: 8px;background: #cccccc;margin:12px 0;-webkit-animation:moveright 1s 1.5s 1  ease both;}
+.banner .slogan small{font-size: 16px;color: #666666;display: block;-webkit-animation:moveright 1s 2s 1  ease both;}
+/*.banner img{position: absolute;top: 0;}*/
+
+/**/
+.service{min-height: 304px;border-bottom: 1px solid #cccccc;overflow: hidden;}
+.column{float: left;width: 25%;margin: 50px 0 40px 0;text-align: center;}
+.column p{font-size: 24px;margin-top: 20px;margin-bottom: 10px;}
+.column span{font-size: 16px;color: #999;display: block;}
+
+.columndoc{float: left;width: 33.3%;margin: 50px 0 40px 0;text-align: center;}
+.columndoc p{font-size: 24px;margin-top: 20px;margin-bottom: 10px;}
+.columndoc span{font-size: 16px;color: #999;display: block;}
+
+/*product*/
+.title{font-size: 32px;text-align:center;min-height: 116px;line-height: 116px;}
+.product{min-height: 470px;border-bottom: 1px solid #ccc;}
+.product .yuer-box{width: 328px;min-height: 418px;border: 1px solid #cecece;display: inline-block;}
+.product .yuer-box:hover{border: 1px solid #ff9eac;}
+.product .nanke-box{width: 328px;min-height: 418px;border: 1px solid #cecece;display: inline-block;}
+.product .nanke-box:hover{border: 1px solid #2f8aff;}
+.product .doctor-box{width: 328px;min-height: 418px;border: 1px solid #cecece;display: inline-block;}
+.product .doctor-box:hover{border: 1px solid #30bfa5;}
+
+.product .product-word{padding: 0 18px;margin-top: 20px;}
+.product-word span{font-size: 20px;}
+.product-word i{float: right;margin-top: -5px;}
+.product-word p{font-size: 16px;color: #999;margin-top: 20px;}
+
+/*saas*/
+.saas{margin-bottom: 48px;margin-top: 10px;overflow: hidden;}
+.saas .saas-item{ width: 47%;display:inline-block;padding-left: 12px;}
+.saas .saas-item img{float: left;margin-right: 22px;}
+.saas .saas-item p{font-size: 18px;color: #ff546c;margin-top: 5px;}
+.saas .saas-item em{font-size: 16px;font-style: normal; color: #666666;
+    white-space: nowrap; width: 80%;text-overflow: ellipsis;overflow: hidden; display: inline-block;}
+
+/*about us*/
+.about{width: 100%;background:#f3f3f3;min-height: 300px;}
+.about .us{}
+.about .us-item{width: 50%;float: left;}
+.about strong{font-size: 18px;margin:30px 0 20px 0;display: inline-block;}
+.about p{font-size: 16px;color: #666;line-height: 24px;padding-right: 60px;margin-bottom: 14px;}
+
+/*parnter*/
+.partner{min-height: 350px;border-bottom: 1px solid #ccc}
+.partner div{width: 178px;height: 78px;border: 1px solid #cccccc;display: inline-block;margin-bottom: 35px;}
+.partner .img1{background: url('../images/partner1.jpg') no-repeat;}
+.partner .img2{background: url('../images/partner2.jpg') no-repeat;}
+.partner .img3{background: url('../images/partner3.jpg') no-repeat;}
+.partner .img4{background: url('../images/partner4.jpg') no-repeat;}
+.partner .img5{background: url('../images/partner5.jpg') no-repeat;}
+.partner .img6{background: url('../images/partner6.jpg') no-repeat;}
+.partner .img7{background: url('../images/partner7.jpg') no-repeat;}
+.partner .img8{background: url('../images/partner8.jpg') no-repeat;}
+.partner .img9{background: url('../images/partner9.jpg') no-repeat;}
+.partner .img10{background: url('../images/partner10.jpg') no-repeat;}
+.partner .img11{background: url('../images/partner11.jpg') no-repeat;}
+.partner .img12{background: url('../images/partner12.jpg') no-repeat;}
+.partner .img13{background: url('../images/partner13.jpg') no-repeat;}
+.partner .img14{background: url('../images/partner14.jpg') no-repeat;}
+.partner .img15{background: url('../images/partner15.jpg') no-repeat;}
+
+.partner .img1:hover{background: url('../images/color1.jpg') no-repeat;}
+.partner .img2:hover{background: url('../images/color2.jpg') no-repeat;}
+.partner .img3:hover{background: url('../images/color3.jpg') no-repeat;}
+.partner .img4:hover{background: url('../images/color4.jpg') no-repeat;}
+.partner .img5:hover{background: url('../images/color5.jpg') no-repeat;}
+.partner .img6:hover{background: url('../images/color6.jpg') no-repeat;}
+.partner .img7:hover{background: url('../images/color7.jpg') no-repeat;}
+.partner .img8:hover{background: url('../images/color8.jpg') no-repeat;}
+.partner .img9:hover{background: url('../images/color9.jpg') no-repeat;}
+.partner .img10:hover{background: url('../images/color10.jpg') no-repeat;}
+.partner .img11:hover{background: url('../images/color11.jpg') no-repeat;}
+.partner .img12:hover{background: url('../images/color12.jpg') no-repeat;}
+.partner .img13:hover{background: url('../images/color13.jpg') no-repeat;}
+.partner .img14:hover{background: url('../images/color14.jpg') no-repeat;}
+.partner .img15:hover{background: url('../images/color15.jpg') no-repeat;}
+
+.partner div:hover{border: 1px solid #999;box-shadow: 0px 0px 5px #999;}
+/*contact*/
+.contact{overflow: hidden;}
+.contact .contact-item{float: left;text-align:center;font-size: 18px;margin: 50px 0 60px 0;}
+.contact .contact-item span{vertical-align: middle;}
+
+/*link*/
+.link{width: 100%;min-height: 200px;}
+.indexlink{background: #666666;}
+.yuerlink{background: #ff7488;}
+.doclink{background: #14a69b;}
+.link .view1180{overflow: hidden;}
+.link .link-item{width: 25%;float: left;}
+.link .link-item ul{margin: 40px auto;width: 31%;}
+.link .link-item ul li{line-height: 24px;}
+.link .link-item ul li:first-child a{font-size: 18px;}
+.link .link-item a{color: white;display:block;font-size: 14px;}
+.link .link-item a:hover{color: #ccc;}
+.yuerlink .link-item a:hover{color: #f9dade;}
+.doclink .link-item a:hover{color: #b1f0eb;}
+
+/*footer*/
+.footer{width: 100%;min-height: 99px;}
+.indexfoot{background: #333333;}
+.yuerfoot{background: #ff546c;}
+.docfoot{background: #198179;}
+
+.footer p{font-size: 12px;color: white;text-align:center;line-height: 24px; padding-top: 15px;}
+
+/*animate*/
+@-webkit-keyframes moveright{
+    0%{opacity:0;-webkit-transform: translate(-200px,0px)}
+    100%{opacity:1;-webkit-transform:translate(0px,0px)}
+} @-moz-keyframes moveright{
+     0%{opacity:0;-webkit-transform: translate(-50px,0px)}
+    100%{opacity:1;-webkit-transform:translate(0px,0px)}
+}
+
+@-webkit-keyframes moveleft{
+    0%{opacity:0;-webkit-transform: translate(200px,0px)}
+    100%{opacity:1;-webkit-transform:translate(0px,0px)}
+} @-moz-keyframes moveleft{
+     0%{opacity:0;-webkit-transform: translate(200px,0px)}
+    100%{opacity:1;-webkit-transform:translate(0px,0px)}
+}
+
+/*--------------------------育儿24h--------------------------------*/
+.colorbanner{width: 100%;min-height: 600px;background: #ffe6e9 url('../images/yuerbj.png') no-repeat;}
+.colorbanner .view1180{z-index: 9;position: relative;}
+.colorbanner .view1180 .imgleft{position: absolute;left: 83px;top: 80px;-webkit-animation:moveright 1.5s 0s 1  ease both;-moz-animation:moveright 1.2s 0s 1 ease both;}
+.colorbanner .view1180 .imgright{position: absolute;right: 83px;bottom: -600px;-webkit-animation:moveleft 1.5s 0s 1  ease both;-moz-animation:moveleft 1.2s 0s 1 ease both;}
+.yuerservice{display:flex;min-height: 386px;border-bottom: 1px solid #cccccc;align-items: center;}
+/*ad*/
+.ad{min-height: 466px;border-bottom: 1px solid #cccccc}
+.ad-item{display:inline-block;text-align: center;width: 49%;margin: 48px 0 58px 0;vertical-align: middle;}
+.ad-item p{font-size: 48px;color: #ff6278;line-height: 60px;margin-bottom: 18px;}
+.ad-item em{font-size: 40px;display: block;font-style: normal;}
+.ad-item span{font-size: 18px;color: #b2b2b2;line-height: 30px;}
+
+/*-----------------------------倍悦好医生-------------------------------*/
+.docbanner{width: 100%;min-height: 600px;background: #e2f6f5 url('../images/doctorbj.png') no-repeat;}
+.docservice .column p{margin:32px 0 0;color: #666;}
+.step{width: 100%;min-height: 466px;border-bottom: 1px solid #ccc;}
+.step .step-word{width:38%;text-align: right; display: inline-block;vertical-align: middle;}
+.step .step-word p{font-size: 48px;line-height: 64px;color: #11a8a5;margin-bottom: 10px; }
+.step .step-word span{font-size: 20px;line-height: 30px;color: #999; }
+.step .step-img{width:61%;text-align: center; display: inline-block;vertical-align: middle;margin: 68px 0 40px 0}
+
+/*--------------------------------安建宝--------------------------------*/
+.nankebanner{width: 100%;min-height: 600px;background:url('../images/nankebj.png') no-repeat;}
+.blue{color:#3072e1!important}
+
+
+
+
+
+

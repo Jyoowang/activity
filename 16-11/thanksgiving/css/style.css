@@ -1,0 +1,20 @@
+header img{width: 100%;}
+
+#returntop {position: fixed;right: 0;bottom: 50px;}
+#returntop img{width:25px;}
+.location{display: flex;text-align: center;align-items: center;width: 100%;background: #fee200;}
+.location .location-item{flex: 1;padding: 6px 0;}
+
+.location-item img{width: 88%}
+
+.firsttit{width: 100%;min-height:3.23704rem;background: #f3b606 url('../images/daily.png') no-repeat 0 0;background-size: 100% 100%;}
+.secondtit{width: 100%;min-height:3.23704rem;background: white url('../images/milk.png') no-repeat 0 0;background-size: 100% 100%;}
+.thirdtit{width: 100%;min-height:3.23704rem;background: white url('../images/nipple.png') no-repeat 0 0;background-size: 100% 100%;}
+
+.product{width: 96%;display: flex;flex-wrap: wrap;align-items: center;justify-content: center;margin:0 auto;margin-top: 8px;}
+.product .item{flex: 49%;border-right: 1px dashed #f60951}
+.product .noline{border-right:none;}
+.item .jzimg{height: 200px;position: relative;padding:10px 6px;padding-bottom: 12px;}
+.item .jzimg img{width: 100%}
+.item img{width: 100%}
+.footer img{width: 100%}

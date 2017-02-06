@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>双十一狂欢购</title>
+	<script type="text/javascript" src="js/libs/zepto.min.js"></script>
+    <script type="text/javascript" src="js/libs/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/wx.js"></script>
+    <link rel="stylesheet" href="css/public.css">   
+</head>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8f67485ceca9e23fd946364e19720f4f";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<body>
+	<div id="App">
+		<head>
+			<div class="banner">
+                <img src="images/bannertop.png" alt="">
+                <img src="images/vouchers.png" alt="">
+            </div>
+		</head>
+        <article>
+            <div class="tit">
+                <img src="images/tit1.png" alt="">
+            </div>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;434&quot;}" id="product_1" onclick="_hmt.push(['_trackEvent', 'product_1', 'product_1'])" class="product">
+           		<div class=""><img src="images/product_1.png" alt=""></div>    
+             </a>
+        	<a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;242&quot;}" id="product_2" onclick="_hmt.push(['_trackEvent', 'product_2', 'product_2'])" class="product">
+           		<div class=""><img src="images/product_2.png" alt=""></div>
+            </a>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;443&quot;}" id="product_3" onclick="_hmt.push(['_trackEvent', 'product_3', 'product_3'])" class="product">
+           		<div class=""><img src="images/product_3.png" alt=""></div>
+            </a>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;399&quot;}" id="product_4" onclick="_hmt.push(['_trackEvent', 'product_4', 'product_4'])" class="product">
+           		<div class=""><img src="images/product_4.png" alt=""></div>
+            </a>
+            <div class="tit">
+                <img src="images/tit2.png" alt="">
+            </div>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;451&quot;}" id="product_5" onclick="_hmt.push(['_trackEvent', 'product_5', 'product_5'])" class="product">
+           		<div class=""><img src="images/product_5.png" alt=""></div>
+            </a>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;398&quot;}" id="product_6" onclick="_hmt.push(['_trackEvent', 'product_6', 'product_6'])" class="product">
+              <div class=""><img src="images/product_6.png" alt=""></div>
+            </a>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;394&quot;}" id="product_10" onclick="_hmt.push(['_trackEvent', 'product_10', 'product_10'])" class="product">
+              <div class=""><img src="images/product_10.png" alt=""></div>
+            </a>
+             <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;95&quot;}" id="product_9" onclick="_hmt.push(['_trackEvent', 'product_9', 'product_9'])" class="product">
+              <div class=""><img src="images/product_9.png" alt=""></div>
+            </a>
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;237&quot;}" id="product_8" onclick="_hmt.push(['_trackEvent', 'product_8', 'product_8'])" class="product">
+              <div class=""><img src="images/product_8.png" alt=""></div>
+            </a> 
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;383&quot;}" id="product_12" onclick="_hmt.push(['_trackEvent', 'product_12', 'product_12'])" class="product">
+              <div class=""><img src="images/product_12.png" alt=""></div>
+            </a>          
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;447&quot;}" id="product_11" onclick="_hmt.push(['_trackEvent', 'product_11', 'product_11'])" class="product">
+              <div class=""><img src="images/product_11.png" alt=""></div> </a>
+            
+            <a href="yuer24hgoto://{&quot;Type&quot;:&quot;11&quot;,&quot;TypeName&quot;:&quot;438&quot;}" id="product_7" onclick="_hmt.push(['_trackEvent', 'product_7', 'product_7'])" class="product">
+              <div class=""><img src="images/product_7.png" alt=""></div>
+            </a>              	
+        </article>
+        <div id="returntop">
+            <img src="images/return.png" alt="">
+        </div>
+
+	</div>
+</body>
+<script>
+    window.onload=function(){ 
+        var oBtn = document.getElementById('returntop');    
+        var timer = null;    
+        var bFlag = false;         
+        oBtn.onclick=function(){    
+            moveScroll(0,500);     
+        }; 
+        function moveScroll(target,time){ 
+            var start = document.documentElement.scrollTop || document.body.scrollTop; 
+            var dis = target - start;    
+            var count = Math.floor(time/30);    
+            var n=0;             
+            clearInterval(timer);    
+            timer = setInterval(function(){    
+                n++;    
+                bFlag=false;    
+                document.documentElement.scrollTop = start + dis*n/count;    
+                document.body.scrollTop = start+dis*n/count;    
+                if(n==count){    
+                    clearInterval(timer);    
+                }     
+            },30);    
+        } 
+    };    
+
+    Zepto(function($) {         
+        if(Util.wechatBrowse()){
+            var UserID = 0;
+            var info = Util.locationObject()
+            if (info) {
+                if (info['UserID']) {
+                    UserID = info['UserID'];
+                }
+            }
+            $("a").each(function(index){                    
+                var attr = $(this).attr("href");
+                var data = JSON.parse(attr.split('//')[1]);
+                    console.log(attr);
+                    var url=''
+                    switch(parseInt(data.Type)){
+                        case  28:   //活动
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+ data.TypeName;
+                        break;
+                        case  11:   //产品详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=4_0_'+data.TypeName;
+                        break;
+                        case  14:   //医生列表
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=9_'+data.TypeName;
+                        break;
+                        case  13:   //解决方案详情
+                            url = 'http://api.yuer24h.com/app/Share/GetCode?target=5_0_'+data.TypeName;
+                        break;
+                    }
+                    $(this).attr('href',url)
+            })
+        }
+    })
+</script>
+</html>

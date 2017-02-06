@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航</title>
+</head>
+<script>
+
+
+window.onload=function(){
+	var container = document.getElementById('container');
+	container.onmouseover=function(){
+		startMove(this,400,'height',function(){
+			startMove(container,400,'width');
+		});
+	}
+};
+	var timer=null;
+	function startMove(obj,target,attr,fn){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			var speed=(target - getStyle(obj,attr))/20;
+	      	speed = speed>0?Math.ceil(speed):Math.floor(speed);
+			if(getStyle(obj,attr) == target){
+				clearInterval(timer);
+				if(fn){
+					fn();
+				}
+			}
+			else{
+				obj.style[attr]=getStyle(obj,attr) + speed + 'px';
+			}
+		},30)
+	}
+	function getStyle(obj,attr){
+		if(obj.currentStyle){
+			return parseFloat(obj.currentStyle[attr]);//返回高度
+		}
+		else{
+			return parseFloat(getComputedStyle(obj,false)[attr]);
+		}
+	}
+</script>
+<style>
+	nav{}
+	nav a{line-height: 44px;-webkit-perspective: 1000px;-moz-perspective: 1000px;perspective: 1000px;}
+	nav a span {position: relative;display: inline-block;padding: 0 14px;background: #2195de;-webkit-transition: -webkit-transform 0.3s;-moz-transition: -moz-transform 0.3s;transition: transform 0.3s;-webkit-transform-origin: 50% 0;-moz-transform-origin: 50% 0;transform-origin: 50% 0;-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;transform-style: preserve-3d;}
+	nav a span::before {position: absolute;top: 100%;left: 0;width: 100%;height: 100%;background: #0965a0;content: attr(data-hover);-webkit-transition: background 0.3s;-moz-transition: background 0.3s;transition: background 0.3s;-webkit-transform: rotateX(-90deg);-moz-transform: rotateX(-90deg);transform: rotateX(-90deg);-webkit-transform-origin: 50% 0;-moz-transform-origin: 50% 0;transform-origin: 50% 0;
+	}
+	nav a:hover span,
+	nav a:focus span {-webkit-transform: rotateX(90deg) translateY(-22px);
+		-moz-transform: rotateX(90deg) translateY(-22px);
+		transform: rotateX(90deg) translateY(-22px);
+	}
+	nav a:hover span::before,
+	nav a:focus span::before {background: #28a2ee;}
+
+</style>
+<body>
+	<nav>
+		<a href=""><span>one</span></a>
+		<a href=""><span>two</span></a>
+		<a href=""><span>three</span></a>
+		<a href=""><span>four</span></a>
+		<a href=""><span>five</span></a>
+	</nav>
+</body>
+</html>

@@ -1,0 +1,476 @@
+{
+	"schedule":[
+
+		{
+			"scheduleID":0,
+
+			"scheduleName":"11月11日  第一天",
+
+			"scheduleBlock":[
+				{
+					"scheduleTitle":"开幕式",
+					"presideName":"郝创利",
+					"presideTitle":"教授",
+					"docID":0,
+					"scheduleList":[
+						{
+							"date":"08:00-08:05",
+							"text":"儿童医院院长致词",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"08:05-08:10",
+							"text":"苏州大学附属儿童医院领导致辞",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"08:10-08:15",
+							"text":"苏州市医学会秘书长致辞",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						}						
+					]
+				},
+				{
+					"scheduleTitle":"主题一：儿童哮喘",
+					"presideName":"盛锦云",
+					"presideTitle":"教授",
+					"docID":1,
+					"scheduleList":[
+						{
+							"date":"08:15-08:50",
+							"text":"儿童哮喘50年回顾及展望",
+							"docName":"盛锦云 ",
+							"docTitle":"教授",
+							"docID":1
+						},
+						{
+							"date":"08:50-09:25",
+							"text":"《儿童支气管哮喘诊断和防治指南2016版》及儿童哮喘门诊标准化建设和信息化管理",
+							"docName":"鲍一笑",
+							"docTitle":"教授",
+							"docID":2
+						},
+						{
+							"date":"09:25-10:00",
+							"text":"儿童支气管哮喘的鉴别诊断",
+							"docName":"郝创利",
+							"docTitle":"教授",
+							"docID":0
+						},
+						{
+							"date":"10:00-10:15",
+							"text":"茶歇",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						}						
+					]
+				},
+				{
+					"scheduleTitle":"主题二：抗感染治疗",
+					"presideName":"陈志敏",
+					"presideTitle":"教授",
+					"docID":3,
+					"scheduleList":[
+						{
+							"date":"10:15-10:50",
+							"text":"儿童流感的规范化诊疗",
+							"docName":"朱春梅",
+							"docTitle":"教授",
+							"docID":4
+						},
+						{
+							"date":"10:50-11:25",
+							"text":"儿童肺炎支原体感染诊治进展",
+							"docName":"陈志敏",
+							"docTitle":"教授",
+							"docID":3
+						},
+						{
+							"date":"11:25-12:00",
+							"text":"儿科呼吸内镜及介入呼吸病学的临床应用进展",
+							"docName":"刘玺诚",
+							"docTitle":"教授",
+							"docID":5
+						},
+						{
+							"date":"12:00-12:30",
+							"text":"GSK卫星会",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"12:30-13:30",
+							"text":"午餐",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						}						
+					]
+				},
+				{
+					"scheduleTitle":"主题三：婴幼儿喘息性疾病",
+					"presideName":"严永东 ",
+					"presideTitle":"教授",
+					"docID":6,
+					"scheduleList":[
+						{
+							"date":"13:30-14:05",
+							"text":"2015儿童哮喘诊疗指南",
+							"docName":"洪建国",
+							"docTitle":"教授",
+							"docID":7
+						},
+						{
+							"date":"14:05-14:40",
+							"text":"吸入治疗在喘息性疾病中的应用",
+							"docName":"盛锦云",
+							"docTitle":"教授",
+							"docID":1
+						},
+						{
+							"date":"14:40-15:15",
+							"text":"FeNO在儿童哮喘管理方面中的作用",
+							"docName":"严永东",
+							"docTitle":"教授",
+							"docID":6
+						},
+						{
+							"date":"15:15-15:25",
+							"text":"茶歇",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						}					
+					]
+				},
+				{
+					"scheduleTitle":"主题四：反复呼吸道感染及免疫缺陷病",
+					"presideName":"王晓川",
+					"presideTitle":"教授",
+					"docID":8,
+					"scheduleList":[
+						{
+							"date":"15:25-16:00",
+							"text":"反复呼吸道感染ABC(临床路径)",
+							"docName":"王晓川 ",
+							"docTitle":"教授",
+							"docID":8
+						},
+						{
+							"date":"16:00-16:35",
+							"text":"儿童慢性咳嗽的诊治",
+							"docName":"郝创利 ",
+							"docTitle":"教授",
+							"docID":0
+						},
+						{
+							"date":"16:35-17:10",
+							"text":"UCB卫星会",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						}
+					]
+				}
+			]
+
+		},
+
+		{
+			"scheduleID":1,
+
+			"scheduleName":"11月12日 第二天",
+
+			"scheduleBlock":[
+				{
+					"scheduleTitle":"主题一：儿童哮喘及变态反应性疾病",
+					"presideName":"林江涛",
+					"presideTitle":"教授",
+					"docID":9,
+					"scheduleList":[
+						{
+							"date":"08:00-08:35",
+							"text":"重症难治性哮喘指南解读",
+							"docName":"林江涛",
+							"docTitle":"教授",
+							"docID":9
+						},
+						{
+							"date":"08:35-09:10",
+							"text":"儿童肺间质性疾病的影像学特征",
+							"docName":"彭芸 ",
+							"docTitle":"教授",
+							"docID":10
+						},
+						{
+							"date":"09:10-09:45",
+							"text":"ASIT与临床意义",
+							"docName":"林小平 ",
+							"docTitle":"教授",
+							"docID":11
+						},
+						{
+							"date":"09:45-10:00",
+							"text":"茶歇",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						}								
+					]
+				},
+				{
+					"scheduleTitle":"主题二：感染性疾病",
+					"presideName":"季伟",
+					"presideTitle":"教授",
+					"docID":14,
+					"scheduleList":[
+						{
+							"date":"10:00-10:35",
+							"text":"呼吸道感染临床诊治若干问题",
+							"docName":"陆权",
+							"docTitle":"教授",
+							"docID":12
+						},
+						{
+							"date":"10:35-11:10",
+							"text":"百日咳诊断与治疗",
+							"docName":"郑跃杰 ",
+							"docTitle":"教授",
+							"docID":13
+						},
+						{
+							"date":"11:10-11:45",
+							"text":"博卡病毒的生物学特性及临床特征",
+							"docName":"季伟 ",
+							"docTitle":"教授",
+							"docID":14
+						},
+						{
+							"date":"11:45-12:15",
+							"text":"AZ卫星会",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""							
+						},
+						{
+							"date":"12:15-13:30",
+							"text":"午餐",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""							
+						}							
+					]
+				},
+				{
+					"scheduleTitle":"主题三：儿童间质性肺病及过敏性疾病 ",
+					"presideName":"陈慧中",
+					"presideTitle":"教授",
+					"docID":15,
+					"scheduleList":[
+						{
+							"date":"13:30-14:05",
+							"text":"先天性肺表面活性物质代谢缺陷--儿童DPLD的重要原因",
+							"docName":"陈慧中",
+							"docTitle":"教授",
+							"docID":15
+						},
+						{
+							"date":"14:05-14:40",
+							"text":"过敏性休克的诊治进展",
+							"docName":"汤蕊 ",
+							"docTitle":"教授",
+							"docID":16
+						},
+						{
+							"date":"14:40-15:15",
+							"text":"儿童免疫缺陷病的临床诊断线索",
+							"docName":"唐雪梅 ",
+							"docTitle":"教授",
+							"docID":17
+						},
+						{
+							"date":"15:15-15:25",
+							"text":"茶歇",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						}			
+					]
+				},
+				{
+					"scheduleTitle":"主题四：呼吸道疾病的诊疗技术",
+					"presideName":"王宇清  ",
+					"presideTitle":"教授",
+					"docID":18,
+					"scheduleList":[
+						{
+							"date":"15:25-16:00",
+							"text":"肺功能在儿童哮喘中的应用",
+							"docName":"张皓 ",
+							"docTitle":"教授",
+							"docID":19
+						},
+						{
+							"date":"16:00-16:35",
+							"text":"规范化过敏性疾病诊断的必要性及研究思路",
+							"docName":"孙宝清",
+							"docTitle":"教授",
+							"docID":20
+						},
+						{
+							"date":"16:35-17:10",
+							"text":"儿童肺部感染性疾病的影像学特征",
+							"docName":"袁新宇 ",
+							"docTitle":"教授",
+							"docID":21
+						}		
+					]
+				}
+
+			]
+
+		},
+
+		{
+			"scheduleID":2,
+
+			"scheduleName":"11月13日 第三天",
+
+			"scheduleBlock":[
+				{
+					"scheduleTitle":"主题一：儿童其他过敏性疾病  ",
+					"presideName":"程雷 ",
+					"presideTitle":"教授",
+					"docID":22,
+					"scheduleList":[
+						{
+							"date":"08:00-08:35",
+							"text":"儿童过敏性鼻炎的新进展",
+							"docName":"程雷",
+							"docTitle":"教授",
+							"docID":22
+						},
+						{
+							"date":"08:35-09:10",
+							"text":"儿童湿疹的诊治进展",
+							"docName":"施辛  ",
+							"docTitle":"教授",
+							"docID":23
+						},
+						{
+							"date":"09:10-09:45",
+							"text":"科学检测过敏原，正确管理儿科过敏性疾病",
+							"docName":"邵洁  ",
+							"docTitle":"教授",
+							"docID":24
+						},
+						{
+							"date":"09:45-10:00",
+							"text":"茶歇",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""
+						}								
+					]
+				},
+				{
+					"scheduleTitle":"主题二：儿童喘息性疾病的诊治",
+					"presideName":"符州 ",
+					"presideTitle":"教授",
+					"docID":25,
+					"scheduleList":[
+						{
+							"date":"10:00-10:35",
+							"text":"哮喘的七个年龄期",
+							"docName":"俞善昌 ",
+							"docTitle":"教授",
+							"docID":26
+						},
+						{
+							"date":"10:35-11:10",
+							"text":"儿童哮喘防治现状与进展",
+							"docName":"符州",
+							"docTitle":"教授",
+							"docID":25
+						},
+						{
+							"date":"11:10-11:45",
+							"text":"毛细支气管炎的诊治进展",
+							"docName":"刘恩梅",
+							"docTitle":"教授",
+							"docID":27
+						},
+						{
+							"date":"11:45-12:20",
+							"text":"联合治疗(ICS+LABA)是哮喘达到完全控制的最佳方案"	,
+							"docName":"刘继贤 ",
+							"docTitle":"教授",
+							"docID":28						
+						},
+						{
+							"date":"12:20-13:30",
+							"text":"午餐",
+							"docName":" ",
+							"docTitle":"",
+							"docID":""							
+						}								
+					]
+				},
+				{
+					"scheduleTitle":"主题三：支气管哮喘的治疗和管理 ",
+					"presideName":"朱灿红 ",
+					"presideTitle":"教授",
+					"docID":29,
+					"scheduleList":[
+						{
+							"date":"13:30-14:05",
+							"text":"重症支原体肺炎的临床特点和治疗策略",
+							"docName":"赵德育 ",
+							"docTitle":"教授",
+							"docID":30
+						},
+						{
+							"date":"14:05-14:40",
+							"text":"白三烯调节剂在儿童哮喘治疗地位的再思考",
+							"docName":"王宇清",
+							"docTitle":"教授",
+							"docID":18
+						},
+						{
+							"date":"14:40-15:15",
+							"text":"哮喘的教育与自我管理",
+							"docName":"朱灿红",
+							"docTitle":"教授",
+							"docID":29
+						},
+						{
+							"date":"15:15-15:35",
+							"text":"考试",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						},
+						{
+							"date":"15:35-18:00",
+							"text":"实践(过敏原点刺，脱敏治疗，肺功能，FeNO)儿童医院景德路院区",
+							"docName":"",
+							"docTitle":"",
+							"docID":""
+						}							
+					]
+				}
+				
+			]
+		}
+	]
+
+
+}

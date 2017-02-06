@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="balack" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title></title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body style="background:white">
+	<div id="App">
+        <div class="doc">
+            <div class="logo">
+                <span class="logo-left"></span>
+                <span class="logo-right">姑苏儿童呼吸论坛<br/>暨儿童呼吸及过敏性疾病进展学习班</span>
+            </div>
+            <div class="info">
+                <span class="jzimg info-left">
+                    <img src="" alt=""><i></i>
+                </span>
+                <span class="info-right">
+                    <strong>鲍一笑</strong>
+                    <small>教授</small>
+                    <em>上海交通大学医学院附属新华医院</em>
+                </span>
+            </div>
+            <p class="introduction">专家简介</p>
+            <div class="introduction-detail">
+                <ul class="">
+                   <!--  <li><i></i><p>医学博士/博士后、儿科主任医师、儿科学教授、博士研究生导师</p></li>
+                    <li><i></i><p>上海交大医学院教授委员会委员</p></li>
+                    <li><i></i><p>国家重点学科：儿大内科主任，儿内科教研室主任</p></li>
+                    <li><i></i><p>国家临床重点专科：儿童呼吸科主任</p></li>
+                    <li><i></i><p>上海医学会变态反应学会侯任主任委员</p></li>
+                    <li><i></i><p>上海医学会儿科分会 副主任委员兼呼吸学组组长</p></li>
+                    <li><i></i><p>中华医学会变态反应学会常委 兼儿科学组组长</p></li>
+                    <li><i></i><p>中华医学会儿科学会委员</p></li>
+                    <li><i></i><p>呼吸学组副组长兼哮喘协作组组长</p></li>
+                    <li><i></i><p>中国医师协会儿科分会委员</p></li>
+                    <li><i></i><p>儿童过敏专委会副主任委员</p></li>
+                    <li><i></i><p>亚洲儿科呼吸学会  常委</p></li>
+                    <li><i></i><p>研究方向： 儿童哮喘的规范化诊疗、基因预测模型及信息化管理</p></li>
+                    <li><i></i>研究成果： 获得国家自然基金重点及多项面上项目资助，上海市重大重点项目资助
+                       发表文章135篇，SCI 32篇建立婴幼儿喘息联合降阶梯方案建立汉族儿童哮喘基因预测模型建立儿童哮喘信息化管理网络<p></p></li> -->
+                </ul>
+            </div>
+        </div>
+	</div>	
+
+
+
+
+	<script type="text/javascript">
+
+
+	$(document).ready(function () {
+		
+    	var urlData = locationObject();
+
+	 	$.ajax({
+            url: 'js/data/doctor.json',
+            type: "GET",
+            dataType: "text",
+            contentType: "application/x-www-form-urlencoded",
+            success: function(response) {
+            	var dataJson = eval('(' + response + ')');
+                console.log(dataJson);
+                var index = 0;
+                if (urlData.docid) {
+                    index = parseInt(urlData.docid); 
+                }               
+            	pushdoctor(dataJson.doctor[index]);
+                console.log(dataJson.doctor[index]);
+
+            },
+            error:function(xhr, status, err){
+            	console.log(err)
+            }
+        })
+
+        function pushdoctor(val){
+            $('.info-left').find('img').attr('src',val.picture);
+            $('.info-right strong').html(val.docNamae);
+            $('.info-right small').html(val.docTitle);
+            $('.info-right em').html(val.hospital);
+        	var str='';
+        		$.each(val.introductionList,function(){
+        			str+=' <li><i></i><p>'+this.text+'</p></li>'       			
+        		})		
+			$(".introduction-detail ul").append(str);
+        }
+
+         function locationObject(){
+            if (window.location.search) {
+                var tt = String(window.location.search).replace('?', '')
+                var arr = tt.split('&')
+                var retu = {}
+                for (var i = 0; i < arr.length; i++) {
+                    var newp = arr[i].split('=')
+                    retu[newp[0]] = newp[1]
+                }
+                return retu
+            } else {
+                return null
+            }
+        }
+
+       
+
+	})
+
+
+	</script>
+</body>
+</html>

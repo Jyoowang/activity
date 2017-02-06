@@ -1,0 +1,31 @@
+/*.container{width: 100%;background: url('../images/background.png')no-repeat center center;background-size: cover;min-height: 100%;}*/
+.title{font-size: 28px;text-align: center;padding-top: 10px;}
+.public-list .con:last-child{ border:none;position: static;}
+.date{padding: 10px 16px;padding-top:0;line-height: 21px;}
+.date p{font-size: 14px;font-weight: bold;margin-top: 10px}
+.con{width: 100%;position:relative;}
+.con-left{width: 26%;display: inline-block;}
+.con-middle{width: 50%;display: inline-block;vertical-align: top;}
+.con-right{float: right; }
+/*.con-left{position: absolute;}
+.con-middle{padding-right: 75px;padding-left: 80px;display: inline-block;}
+.con-right{position: absolute;right: 0}*/
+.theme{margin-top: 10px;position: relative;}
+.theme-left{}
+.theme-right{float: right;}
+
+/*医生详情页*/
+.doc{padding: 0 16px;}
+.logo .logo-left{background: url('../images/logo.png')no-repeat 0 0;
+    background-size: 100% 100%;width: 45px;height: 45px;display: inline-block;vertical-align: middle;margin-top: 16px;margin-right: 6px;}
+.logo .logo-right{font-size: 13px;color: #1262a9;font-family: "MicrosoftJhengHei"; font-weight: bold; vertical-align: middle;height: 45px;line-height: 20px;display: inline-block;margin-top: 22px;}
+.doc .info{padding: 10px 16px;display: flex;}
+.info .info-left{flex: 40%;height: 180px;margin-right: 5%}
+.info .info-right{flex: 55%;color:#204a9e;margin-top: 60px;font-size: 14px;font-weight: bold;}
+.info .info-right strong{font-style: normal;display: inline-block;font-size: 18px;}
+.info .info-right em{font-style: normal;display:block;}
+.introduction{font-size: 26px;color: #204a9e;text-align: center;font-weight: bold;letter-spacing: 5px;}
+.introduction-detail {color: #231815;margin: 10px 0; padding-bottom: 20px;}
+.introduction-detail ul {width: 85%; margin: 0 auto; position: relative;}
+.introduction-detail ul li {margin-bottom: 6px;position: relative;}
+.introduction-detail ul li i {width: 6px;height: 6px;background: #204a9e; display: block;border-radius: 50%;position: absolute; left: -16px;top: 6px; z-index: 12;}
