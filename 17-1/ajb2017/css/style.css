@@ -1,0 +1,36 @@
+#App { height: auto; width: 100%; max-width: 640px; margin: 0 auto; overflow: auto; position: relative; }
+
+#App::-webkit-scrollbar {  width: 0;  height: 0 }
+html { overflow-x:hidden; -webkit-text-size-adjust:none;  }
+body {font-family:Microsoft YaHei,Arial,SimSun; color:#000;  overflow-y: hidden;}
+
+
+
+.content{margin-bottom: 52px;}
+.content img{width: 100%;}
+.btn{width: 100%;height: 52px;line-height: 52px;color: white;background: #003789;text-align: center;position: fixed;bottom: 0;font-size: 18px}
+.btn i{background: url(../images/arrow.png) no-repeat 0px 0px;background-size: 100%;display: inline-block;position: absolute;bottom: 10px;z-index: 999;width: 25px;height: 25px;-webkit-animation: movefadeInUp 1.5s 1s infinite ease both;-moz-animation:movefadeInUp 1.5s 1s infinite ease both;}
+@-webkit-keyframes movefadeInUp{
+    0%{opacity:0;-webkit-transform:translateX(-30px)}
+    70%{opacity:1;-webkit-transform:translateX(0)}
+    100%{opacity:0;-webkit-transform:translateX(20px)}
+} @-moz-keyframes movefadeInUp{
+    0%{opacity:0;-moz-transform:translateX(-30px)}
+    70%{opacity:1;-moz-transform:translateX(0)}
+    100%{opacity:0;-webkit-transform:translateX(20px)}
+}
+
+.Popups-box{  width: 100%; height: 100%; position: fixed; top:0; left: 0; z-index: 99; background-color: rgba(0,0,0,0.5); }
+.Popups-box .Popups-content{position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-o-transform: translate(-50% -50%);-moz-transform: translate(-50%, -50%);width: 250px;  background-color: #fff; border-radius: 5px; padding: 0px 15px 0 15px;}
+.Popups-box .Popups-content >p{ /*text-align: center;*//* margin: 30px 0;*/ }
+.Popups-box .Popups-content .btns-box{ border-top: 1px solid #e1e1e1;  text-align: center;/* margin-top: 16px;*/}
+.Popups-box .Popups-content .btns-box span{ display: inline-block; line-height: 40px; width: 50%;box-sizing: border-box;; }
+.Popups-box .Popups-content .btns-box span.View{  color: #fe5a7c; border-right: 1px solid #e1e1e1; }
+
+.hide{display: none;}
+
+.Popups-box .erwei-popups{width: 180px; padding:15px; padding-bottom: 0;}
+.Popups-box .erwei-popups .yes{color: #337bff}
+.Popups-box .erwei-popups img{max-width: 100%; max-height: 100%;}
+.Popups-box .Popups-content.erwei-popups >p{margin-bottom: 8px; font-size: 12px;margin-top: 0px; text-align: center;}
+.Popups-box .Popups-content.erwei-popups strong{font-size: 14px;font-weight: normal;}
