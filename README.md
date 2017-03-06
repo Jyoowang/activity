@@ -2,8 +2,7 @@
 ###How to use git to commit file
 ===================
 在本地新建文件夹(gitfirst)<br>
-右击文件夹<br>
-git bash here(调出命令行)<br>
+右击文件夹,git bash here(调出命令行)<br>
 git init(创建本地仓库)ls -ah--->查看.git文件夹<br>
 创建密钥（ssh-keygen -t rsa -C"457450288@qq.com"）<br>
 连接本地仓库与github、需要密钥<br>检查是否连接成功(ssh -T git@github.com)<br>
