@@ -1,0 +1,13 @@
+.head{overflow: hidden;margin-top: 12px}
+.head .company{color:#2a2a2a;font-size:16px;float: left;font-weight: 600}
+.head .company p{}
+.head .company span{display:block;font-size: 0.8em}
+.head .company em{font-size:0.7em ;display: block;color: #444;}
+.head .com-Logo{border: 3px solid #019ddf;color: #019ddf;font-size: 20px;font-weight: bold;padding: 3px;position: absolute;right: 10px;letter-spacing: 2px;}
+.tit{font-size: 22px;text-align: center;margin-top: 30px}
+.content{margin-top: 40px;font-size: 13px;}
+.content p{width: 100%;margin-bottom: 26px}
+.content p b{display: inline-block;width: 27%;height: 100%; font-style: normal; vertical-align: top;}
+.content p span{display: inline-block;width: 73%;font-style: normal;vertical-align: top;}
+.sign{width:190px;height: 80px;margin-bottom: 25px;margin-top: 18px;}
+.sign img{width: 100%}
